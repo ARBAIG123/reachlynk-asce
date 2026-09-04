@@ -203,8 +203,8 @@ export function ProjectInquiryForm({ mode }: { mode: InquiryMode }) {
             rows={5}
             placeholder={
               mode === "project"
-                ? "We're a 12-person studio launching a new service line and need a site that turns visits into booked calls…"
-                : "Our site was built in 2019, takes forever to load, and looks nothing like the quality of our work…"
+                ? "We run a neighbourhood restaurant and want a site where guests can read the menu and book a table in two taps…"
+                : "Our site was built in 2019, takes forever to load, and doesn't bring in the bookings our food deserves…"
             }
             className={cn(inputClasses, "h-auto resize-none py-3.5 leading-relaxed")}
           />

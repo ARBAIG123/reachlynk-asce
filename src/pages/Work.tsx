@@ -15,15 +15,15 @@ import { buttonVariants } from "@/components/ui/button";
 const FEATURE_STORY = [
   {
     k: "The challenge",
-    t: "Six-second load times, a catalog that felt like a spreadsheet, and a checkout that leaked customers at every step. The brand deserved better than the storefront was delivering.",
+    t: "Sable & Thyme's menu hid behind a PDF, the site took six seconds to load, and every reservation arrived by phone — usually during the lunch rush. The food was the draw; the website was the obstacle.",
   },
   {
     k: "The approach",
-    t: "A calmer, editorial storefront built on real content. We rebuilt the catalog around lifestyle imagery, cut 80% of the JavaScript, and redesigned checkout as a natural part of the brand experience.",
+    t: "We rebuilt the site around what a hungry person actually wants: a menu that loads in under a second, photography that makes them book, and a reservation flow short enough to finish between courses elsewhere.",
   },
   {
     k: "The result",
-    t: "The site now loads in under a second, the conversion rate climbed steadily from week one, and Nord & Oak's team edits seasonal drops themselves through a CMS.",
+    t: "Reservation requests nearly tripled in the first quarter, the phone stopped ringing mid-service, and the team updates the seasonal menu themselves — in minutes, without touching code.",
   },
 ];
 
@@ -54,18 +54,19 @@ export default function Work() {
             </h1>
             <Reveal delay={0.35}>
               <p className="mt-7 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-                A small sample of recent launches, each with the numbers they moved.
-                Real projects, real businesses, no stock photography.
+                A small sample of recent launches, each with the numbers they moved —
+                restaurants, cafés, hotels, and local shops. Real venues, real results,
+                no stock photography.
               </p>
             </Reveal>
           </div>
           <Reveal delay={0.5} y={16}>
             <div className="mt-10 flex flex-wrap items-center gap-3">
               {[
-                "E-commerce",
-                "SaaS",
-                "Professional services",
-                "Local business",
+                "Restaurants",
+                "Cafés",
+                "Hotels",
+                "Local shops & services",
               ].map((tag) => (
                 <span
                   key={tag}
@@ -287,13 +288,13 @@ export default function Work() {
           </Reveal>
           <Reveal delay={0.1}>
             <blockquote className="mt-8 text-[clamp(1.5rem,3.2vw,2.6rem)] font-extrabold leading-snug tracking-[-0.02em]">
-              “The new site is the best salesperson we&apos;ve ever hired — it works
-              nights, weekends, and never asks for a raise.”
+              “The website books more tables than our best server ever did — and it
+              never takes a day off.”
             </blockquote>
           </Reveal>
           <Reveal delay={0.2}>
             <p className="mt-6 text-sm font-bold text-muted-foreground">
-              — Client, after a Reachlynk redesign
+              — A restaurant owner, after a Reachlynk launch
             </p>
           </Reveal>
           <Reveal delay={0.3}>

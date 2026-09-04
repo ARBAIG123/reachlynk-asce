@@ -7,7 +7,7 @@ export const SITE = {
   email: "hello@reachlynk.studio",
   domain: "reachlynk.studio",
   blurb:
-    "A small web studio building clean, fast, conversion-focused websites for businesses that care how they're seen.",
+    "A web studio building modern, high-performance websites that help restaurants, cafés, hotels, and local businesses grow online.",
 };
 
 export const NAV_LINKS = [
@@ -33,75 +33,75 @@ export const SERVICES: Service[] = [
     num: "01",
     title: "Website design & build",
     description:
-      "A custom marketing website designed and built from scratch — no templates, no bloated page builders. One page or thirty, it will load fast, look sharp, and steer visitors toward the one action that matters.",
+      "A modern website designed and built from scratch for restaurants, cafés, hotels, shops, and local businesses — no templates, no bloated page builders. One page or thirty, it will load fast, look sharp, and steer visitors toward the one action that matters.",
     bullets: [
       "Custom layouts in your brand language",
       "Built on modern, hand-written code",
-      "Mobile-first, accessibility-checked",
+      "Mobile-first — most visitors arrive by phone",
       "CMS so your team can edit content",
     ],
     note: "Most projects start here — from $1,900.",
   },
   {
     num: "02",
-    title: "E-commerce websites",
+    title: "Restaurant & café websites",
     description:
-      "Clean storefronts that make buying feel effortless. We set up the catalog, the checkout, and the product pages so the design doesn't fight the sale — it finishes it.",
+      "The menu is the hero, and the reservation is the goal. We design sites that load your menu in under a second, make hungry people book or order in two taps, and show up beautifully in search when guests are nearby.",
     bullets: [
-      "Catalog, product & checkout design",
-      "Payments, shipping & tax configured",
-      "Product photography direction",
-      "Conversion-focused PDPs",
+      "Menu-first design, readable in seconds",
+      "Reservations & online ordering set up",
+      "Google Business & maps integration",
+      "Food photography direction",
     ],
-    note: "Built on platforms you can run yourself.",
+    note: "Built for real service — lunch rush included.",
   },
   {
     num: "03",
-    title: "Website redesigns",
+    title: "Hotels & direct booking",
     description:
-      "Your current site is slow, dated, or just not converting. We audit what's dragging it down, keep what works, and rebuild the rest into something you're proud to send people to.",
+      "Every booking made on an OTA costs you commission. We build calm, story-led hotel sites with a booking engine that guests actually finish — so more stays happen direct, where the margin is yours.",
     bullets: [
-      "Full conversion & performance audit first",
+      "Live availability & direct booking engine",
+      "Rooms, packages & local-guide pages",
+      "Channel-manager friendly integration",
+      "Direct-vs-OTA analytics dashboard",
+    ],
+    note: "Often pays for itself in the first season.",
+  },
+  {
+    num: "04",
+    title: "Local business redesigns",
+    description:
+      "Your current site is slow, dated, or just not bringing people through the door. We audit what's costing you customers, keep what works, and rebuild the rest — with local search handled properly this time.",
+    bullets: [
+      "Conversion & speed audit first",
+      "Local SEO: maps, reviews & search presence",
       "Content migration, zero downtime",
-      "SEO preserved — often improved",
       "Before/after performance report",
     ],
     note: "The fastest way to more customers from the traffic you already have.",
   },
   {
-    num: "04",
+    num: "05",
     title: "Brand & identity",
     description:
-      "A website is only as strong as the identity behind it. We refine logos, type, color, and voice into a small system that makes every page feel intentional.",
+      "A website is only as strong as the identity behind it. We refine logos, type, color, and voice into a small system that makes every page — and every menu, sign, and post — feel intentional.",
     bullets: [
       "Logo & wordmark refinement",
       "Type, color & spacing system",
-      "Launch-ready brand guidelines",
-      "Social & pitch-deck templates",
+      "Menu & print-ready brand files",
+      "Social & campaign templates",
     ],
     note: "Often paired with a new build.",
-  },
-  {
-    num: "05",
-    title: "Conversion copy & SEO foundation",
-    description:
-      "Words that sell and structure search engines understand. We write the headlines, the proof, and the calls to action — and make sure the technical SEO is in place from day one.",
-    bullets: [
-      "Messaging & page structure",
-      "Copywriting across every page",
-      "Technical SEO + schema setup",
-      "Google Search Console handover",
-    ],
-    note: "Included with most builds, offered standalone too.",
   },
   {
     num: "06",
     title: "Care plans",
     description:
-      "Websites are living things. We keep yours updated, secure, and fast with a monthly plan — new sections, seasonal campaigns, performance checks, and a real human on call.",
+      "Websites are living things — especially in hospitality, where menus and seasons change. We keep yours updated, secure, and fast with a monthly plan and a real human on call.",
     bullets: [
-      "Monthly edits & new pages",
-      "Speed & uptime monitoring",
+      "Menu, seasonal & page updates",
+      "Speed, uptime & review monitoring",
       "Updates, backups & security",
       "Quarterly strategy call",
     ],
@@ -141,92 +141,76 @@ export interface Project {
   services: string[];
   layout: MockLayout;
   colors: Colorway;
+  /** optional label for the mockup's main call-to-action */
+  mockCta?: string;
+  /** optional labels for the "local" mockup tiles */
+  mockTiles?: [string, string, string];
 }
 
 export const PROJECTS: Project[] = [
   {
-    slug: "nord-and-oak",
-    name: "Nord & Oak",
-    domain: "nordandoak.com",
-    industry: "Homeware e-commerce",
-    category: "E-commerce",
+    slug: "sable-and-thyme",
+    name: "Sable & Thyme",
+    domain: "sableandthyme.com",
+    industry: "Neighbourhood restaurant",
+    category: "Restaurants",
     year: "2026",
-    tagline: "A homeware store that finally feels like home.",
-    headline: "Warmer shelves, faster carts",
+    tagline: "A menu that reads like a promise — and a reservation flow that keeps it.",
+    headline: "Full tables, half the phone calls",
     summary:
-      "Nord & Oak sells handmade homeware — but their old store felt cold and took 6 seconds to load. We rebuilt the catalog around a calmer, editorial layout, cut the bloat, and made the checkout feel like part of the brand.",
-    metric: "+41%",
-    metricLabel: "online sales in the first 90 days",
-    services: ["E-commerce build", "Brand refresh", "Copywriting"],
+      "Sable & Thyme serves exceptional seasonal food, but its menu hid behind PDFs and its phone rang all day. We rebuilt the site around what hungry people actually want — a menu that loads in under a second, photos that make you book, and a reservation flow that takes two taps.",
+    metric: "+2.8×",
+    metricLabel: "online reservation requests in the first quarter",
+    services: ["Website design", "Reservations", "Copywriting"],
+    layout: "local",
+    colors: {
+      paper: "#f4eee5",
+      surface: "#e9dbc8",
+      ink: "#2b2017",
+      accent: "#a8552f",
+      wash: "#ecdfcf",
+    },
+    mockCta: "Book a table",
+    mockTiles: ["Seasonal menu", "Reservations", "Private dining"],
+  },
+  {
+    slug: "the-marlowe",
+    name: "The Marlowe",
+    domain: "themarlowe.co",
+    industry: "Boutique hotel",
+    category: "Hotels",
+    year: "2026",
+    tagline: "A small hotel with a healthy direct-booking habit.",
+    headline: "Guests who skip the middlemen",
+    summary:
+      "The Marlowe's guests found them on booking sites — then rebooked through them, paying commission every time. We built a calm, story-led site with live availability and a two-minute checkout, and made the direct stay feel like the upgrade it is.",
+    metric: "−31%",
+    metricLabel: "OTA commission as a share of bookings within six months",
+    services: ["Hotel website", "Direct booking engine", "Content"],
     layout: "commerce",
     colors: {
-      paper: "#f4efe3",
-      surface: "#e9e0c9",
-      ink: "#2a2418",
-      accent: "#a97948",
-      wash: "#efe7d3",
+      paper: "#f1efe9",
+      surface: "#ddd8cb",
+      ink: "#26221a",
+      accent: "#7d6a4a",
+      wash: "#e7e3d8",
     },
-  },
-  {
-    slug: "fieldnote",
-    name: "Fieldnote",
-    domain: "fieldnote.app",
-    industry: "B2B SaaS",
-    category: "SaaS",
-    year: "2026",
-    tagline: "A SaaS site that sells the product, not the jargon.",
-    headline: "Clarity that compounds",
-    summary:
-      "Fieldnote's platform was excellent and their site was unreadable. We turned a feature dump into a story: one clear value proposition, honest product shots, and pricing pages built to answer the question before it's asked.",
-    metric: "0.8s",
-    metricLabel: "LCP — and a 98 Lighthouse score",
-    services: ["Website build", "Messaging", "CMS"],
-    layout: "saas",
-    colors: {
-      paper: "#eef3ef",
-      surface: "#dbe6de",
-      ink: "#1f2e26",
-      accent: "#46796b",
-      wash: "#e2ebe4",
-    },
-  },
-  {
-    slug: "lumen-legal",
-    name: "Lumen Legal",
-    domain: "lumenlegal.co",
-    industry: "Law firm",
-    category: "Services",
-    year: "2025",
-    tagline: "Serious law, without the legalese.",
-    headline: "A firm that speaks human",
-    summary:
-      "Lumen Legal had a site that read like a filing cabinet. We introduced calm editorial layouts, plain-language case summaries, and an intake path so clear that potential clients stopped emailing and started booking.",
-    metric: "3.2×",
-    metricLabel: "more consultation requests",
-    services: ["Website redesign", "Copywriting", "SEO"],
-    layout: "editorial",
-    colors: {
-      paper: "#f2f1ec",
-      surface: "#e2e3dd",
-      ink: "#22292f",
-      accent: "#4c6280",
-      wash: "#e9eae4",
-    },
+    mockCta: "Book your stay",
   },
   {
     slug: "basalt-coffee",
     name: "Basalt Coffee",
     domain: "basaltcoffee.com",
-    industry: "Local café",
-    category: "Local business",
+    industry: "Specialty café",
+    category: "Cafés",
     year: "2025",
     tagline: "A neighborhood café, open online too.",
     headline: "Local warmth, digital reach",
     summary:
-      "Basalt needed an online ordering channel without losing its neighborhood soul. We built a warm, honest site with a two-tap ordering flow, a menu that updates itself, and a loyalty hook that brings regulars back.",
+      "Basalt needed an online ordering channel without losing its neighborhood soul. We built a warm, honest site with a two-tap ordering flow, a menu that updates itself, and a loyalty hook that brings regulars back week after week.",
     metric: "1.9×",
-    metricLabel: "weekly online orders in month one",
-    services: ["Website build", "Online ordering", "Photography direction"],
+    metricLabel: "weekly online orders in the first month",
+    services: ["Website design", "Online ordering", "Photography direction"],
     layout: "local",
     colors: {
       paper: "#f1e9de",
@@ -235,13 +219,15 @@ export const PROJECTS: Project[] = [
       accent: "#bf5a2c",
       wash: "#eadfd1",
     },
+    mockCta: "Order online",
+    mockTiles: ["Seasonal menu", "Merch", "Events"],
   },
   {
     slug: "atelier-aura",
     name: "Atelier Aura",
     domain: "atelieraura.studio",
     industry: "Beauty studio",
-    category: "Services",
+    category: "Local services",
     year: "2025",
     tagline: "Calm booking for a calm studio.",
     headline: "Beauty in the booking flow",
@@ -258,21 +244,22 @@ export const PROJECTS: Project[] = [
       accent: "#8d6580",
       wash: "#ecdfe3",
     },
+    mockCta: "Book a visit",
   },
   {
     slug: "pivot-health",
     name: "Pivot Health",
     domain: "pivothealth.co",
-    industry: "Physiotherapy",
-    category: "Local business",
+    industry: "Physiotherapy clinic",
+    category: "Local services",
     year: "2024",
-    tagline: "A clinic site patients actually read.",
+    tagline: "A clinic website that patients actually read.",
     headline: "Healthier pages, fuller diary",
     summary:
-      "Three clinics, one outdated site, and a reception team drowning in calls. We rebuilt Pivot's site around trust — clear services, real answers to common worries — and routed every inquiry into a simple self-service form.",
-    metric: "-43%",
-    metricLabel: "admin phone calls in two months",
-    services: ["Website redesign", "Multi-location SEO"],
+      "Three clinics, one outdated site, and a reception team drowning in calls. We rebuilt Pivot's site around trust — clear treatments, honest answers to common worries — and routed every inquiry into a simple self-service booking form.",
+    metric: "−43%",
+    metricLabel: "admin phone calls within two months",
+    services: ["Website redesign", "Local SEO"],
     layout: "local",
     colors: {
       paper: "#eef1ee",
@@ -281,6 +268,32 @@ export const PROJECTS: Project[] = [
       accent: "#5f8578",
       wash: "#e4e9e4",
     },
+    mockCta: "Book an appointment",
+    mockTiles: ["Treatments", "The team", "Locations"],
+  },
+  {
+    slug: "june-and-grove",
+    name: "June & Grove",
+    domain: "juneandgrove.com",
+    industry: "Flower & plant studio",
+    category: "Local shops",
+    year: "2024",
+    tagline: "Order flowers like you mean it.",
+    headline: "A shopfront that works after closing time",
+    summary:
+      "June & Grove had a beautiful window and an invisible website. We gave the studio an equally beautiful shopfront online — a fast, image-led store with local delivery built in, so neighbors can order after the door is locked.",
+    metric: "+64%",
+    metricLabel: "more online orders within two months",
+    services: ["Website build", "E-commerce setup", "Local SEO"],
+    layout: "commerce",
+    colors: {
+      paper: "#f1f3ec",
+      surface: "#dfe4d2",
+      ink: "#23271d",
+      accent: "#5f7d4f",
+      wash: "#e8ebdb",
+    },
+    mockCta: "Shop now",
   },
 ];
 
@@ -307,24 +320,24 @@ export const PLANS: Plan[] = [
       "One high-converting page",
       "Clean, custom design — no template",
       "Mobile-first & accessibility checked",
-      "Contact form + analytics setup",
+      "Contact or reservation form + analytics",
       "2 weeks to launch",
       "Two revision rounds",
     ],
     icon: "rocket",
     popular: false,
-    note: "Great for launches, events & MVPs.",
+    note: "Great for openings, events & early ideas.",
   },
   {
     name: "Business",
     price: "$4,900",
     cadence: "one-time",
-    tagline: "A full website built to turn visitors into customers.",
+    tagline: "A full website built to turn visitors into regulars.",
     features: [
       "Up to 7 custom pages",
       "Editable CMS for your team",
-      "Conversion copywriting included",
-      "Technical SEO + schema",
+      "Menu, booking or store integration",
+      "Local SEO + Google Business setup",
       "4 weeks to launch",
       "Unlimited revisions during build",
       "30 days of post-launch support",
@@ -332,7 +345,7 @@ export const PLANS: Plan[] = [
     ],
     icon: "star",
     popular: true,
-    note: "The sweet spot for growing businesses.",
+    note: "The sweet spot for growing venues.",
   },
   {
     name: "Premium",
@@ -342,7 +355,7 @@ export const PLANS: Plan[] = [
     features: [
       "Everything in Business",
       "Unlimited pages & advanced layouts",
-      "Integrations: booking, payments, CRM",
+      "Reservations, ordering or booking engine",
       "Custom motion & interactions",
       "Brand refinement included",
       "6 weeks to launch",
@@ -351,20 +364,20 @@ export const PLANS: Plan[] = [
     ],
     icon: "crown",
     popular: false,
-    note: "For brands that want it unforgettable.",
+    note: "For venues that want it unforgettable.",
   },
 ];
 
 export const ADDONS = [
-  { name: "Care plan", price: "from $190/mo", desc: "Monthly edits, speed & security." },
-  { name: "E-commerce setup", price: "from $1,500", desc: "Store, checkout, payments." },
-  { name: "Blog & content engine", price: "from $900", desc: "CMS + writing workflow." },
+  { name: "Care plan", price: "from $190/mo", desc: "Monthly updates, speed & security." },
+  { name: "Reservations & ordering", price: "from $900", desc: "Bookings or orders wired in." },
+  { name: "E-commerce setup", price: "from $1,500", desc: "Store, checkout, delivery zones." },
 ];
 
 export const PRICING_FAQS = [
   {
     q: "What happens after I send an inquiry?",
-    a: "You'll hear from a human — usually within one business day — for a short call about your goals. Within a week you'll receive a fixed proposal: scope, price, and dates. No hourly surprises, no sales scripts.",
+    a: "You'll hear from a human — usually within one business day — for a short call about your venue and your goals. Within a week you'll receive a fixed proposal: scope, price, and dates. No hourly surprises, no sales scripts.",
   },
   {
     q: "Are the prices really fixed?",
@@ -376,11 +389,11 @@ export const PRICING_FAQS = [
   },
   {
     q: "Do I need to be technical?",
-    a: "Not at all. We handle the hosting, the domain, the analytics, and the handover. You'll get a short training call and a CMS you can edit without touching code.",
+    a: "Not at all. We handle the hosting, the domain, the analytics, and the handover. You'll get a short training call and a CMS you can edit without touching code — updating a menu takes minutes, not meetings.",
   },
   {
-    q: "Will my site work with my existing tools?",
-    a: "Almost certainly. Booking systems, CRMs, payment providers, email tools — we integrate with the services you already use and recommend better ones when it makes sense.",
+    q: "Will it work with my reservation or ordering tools?",
+    a: "Almost certainly. OpenTable, Resy, SevenRooms, your booking engine, Toast, Shopify, delivery partners — we integrate with the tools you already use and recommend better ones when it makes sense.",
   },
   {
     q: "What if I'm not happy with the design?",
@@ -404,7 +417,7 @@ export const PROCESS: ProcessStep[] = [
     title: "Discover",
     duration: "Week 1",
     description:
-      "We start with your business, not your website. A short call, a look at your current site (or competitors'), and honest questions about what success looks like in numbers.",
+      "We start with your venue or business, not your website. A short call, a look at your current site (or competitors'), and honest questions about what success looks like in numbers — covers filled, orders placed, rooms booked.",
     deliverables: ["Goals & audience map", "Free website audit", "Fixed proposal & timeline"],
   },
   {
@@ -412,15 +425,15 @@ export const PROCESS: ProcessStep[] = [
     title: "Structure",
     duration: "Week 2",
     description:
-      "Before any pixels, we agree on what every page needs to do. We map the sitemap, the messaging, and the calls to action — so the design has a job, not just a look.",
-    deliverables: ["Sitemap & wireframes", "Messaging outline", "Content checklist"],
+      "Before any pixels, we agree on what every page needs to do — and what the visitor should do next. We map the pages, the message, and the calls to action, so the design has a job, not just a look.",
+    deliverables: ["Sitemap & wireframes", "Messaging outline", "Menu & content checklist"],
   },
   {
     num: "03",
     title: "Design",
     duration: "Weeks 2–3",
     description:
-      "We design in your brand, on real content, starting with the pages that matter most. You review in the browser, leave comments, and watch the site take shape — no abstract PDFs.",
+      "We design in your brand, on real content, starting with the pages that matter most — usually the menu, the booking flow, or the store. You review in the browser, leave comments, and watch the site take shape.",
     deliverables: ["High-fidelity page designs", "Interactive prototype", "Revisions until it's right"],
   },
   {
@@ -428,8 +441,8 @@ export const PROCESS: ProcessStep[] = [
     title: "Build",
     duration: "Weeks 3–5",
     description:
-      "Design becomes clean, hand-written code — fast by default, not as an afterthought. Copy, images and integrations all land here, and you see a live staging link from day one.",
-    deliverables: ["Live staging site", "CMS training", "Speed & SEO tune-up"],
+      "Design becomes clean, hand-written code — fast by default, not as an afterthought. Reservations, ordering, payments and local search all land here, and you see a live staging link from day one.",
+    deliverables: ["Live staging site", "Integrations & CMS training", "Speed & local SEO tune-up"],
   },
   {
     num: "05",
@@ -444,44 +457,44 @@ export const PROCESS: ProcessStep[] = [
 // --- Social proof ------------------------------------------------------------
 
 export const STATS = [
-  { value: 140, suffix: "+", label: "sites launched since 2019" },
+  { value: 140, suffix: "+", label: "venues & local businesses served since 2019" },
   { value: 98, suffix: "", label: "average Lighthouse score" },
-  { value: 2.4, suffix: "×", label: "average lift in conversions", decimals: 1 },
+  { value: 2.4, suffix: "×", label: "average lift in bookings & orders", decimals: 1 },
   { value: 6, suffix: " wks", label: "average time from brief to launch" },
 ];
 
 export const TESTIMONIALS = [
   {
     quote:
-      "Reachlynk rebuilt our site in four weeks and sales went up 41% in the first quarter. The process was calm, the communication was instant, and the design still turns heads.",
-    name: "Maren Ellison",
-    role: "Founder, Nord & Oak",
+      "Reservations tripled in the first quarter and the phone finally stopped ringing during service. Reachlynk understood hospitality from day one — the process was calm and the site still turns heads.",
+    name: "Renata Silva",
+    role: "Co-owner, Sable & Thyme",
   },
   {
     quote:
-      "They asked better questions than agencies three times their size. The site they delivered is the reason our trial signups doubled — visitors finally understand what we do.",
-    name: "Dev Okafor",
-    role: "CEO, Fieldnote",
+      "We used to hand a fifth of every booking to the booking sites. Now more than half our guests book direct, and the site pays for itself every single month.",
+    name: "Marcus Hale",
+    role: "General Manager, The Marlowe",
   },
   {
     quote:
-      "Our old site was an embarrassment that we paid a lot for. Reachlynk made the whole thing feel easy — and for the first time, clients tell us they found us online.",
-    name: "Priya Raman",
-    role: "Partner, Lumen Legal",
+      "Our regulars order online in seconds and new neighbors find us on a map that actually works. It feels like the café finally has a storefront that never closes.",
+    name: "Milo Vance",
+    role: "Founder, Basalt Coffee",
   },
 ];
 
 export const CLIENT_MARQUEE = [
-  "Nord & Oak",
-  "Lumen Legal",
-  "Fieldnote",
+  "Sable & Thyme",
+  "The Marlowe",
   "Basalt Coffee",
   "Atelier Aura",
+  "June & Grove",
   "Pivot Health",
-  "Solace Architecture",
-  "Meridian Labs",
-  "Kite & Co.",
-  "Foundry Works",
+  "Ferro Kitchen",
+  "Harbor House Hotel",
+  "Olea & Olive",
+  "North & Found",
 ];
 
 // --- About -------------------------------------------------------------------
@@ -489,11 +502,11 @@ export const CLIENT_MARQUEE = [
 export const VALUES = [
   {
     title: "Performance is respect",
-    desc: "A fast site respects your visitors' time. We treat every kilobyte as a decision — your site should feel instant, everywhere.",
+    desc: "A hungry guest shouldn't wait for a menu to load, and a tired traveler shouldn't wrestle a booking form. We treat every kilobyte as a decision — your site should feel instant, everywhere.",
   },
   {
     title: "Clarity over clever",
-    desc: "Trends fade; clear communication doesn't. We design so a first-time visitor understands what you do within seconds.",
+    desc: "Trends fade; clear communication doesn't. We design so a first-time visitor understands what you offer, where you are, and how to book within seconds.",
   },
   {
     title: "Honest by default",
@@ -501,7 +514,7 @@ export const VALUES = [
   },
   {
     title: "Built to be kept",
-    desc: "We hand over sites you can run. Clean code, an editable CMS, and documentation a non-technical person can actually follow.",
+    desc: "We hand over sites you can run. Clean code, an editable CMS, and training a busy owner can actually follow — menu changes take minutes, not meetings.",
   },
 ];
 
@@ -509,17 +522,17 @@ export const TIMELINE = [
   {
     year: "2019",
     title: "Two designers, one laptop",
-    desc: "Reachlynk starts as a two-person studio building launch pages for friends' startups — and learning that most agencies overcharge and under-deliver.",
+    desc: "Reachlynk starts as a two-person studio building websites for friends' cafés and shops — and learning that most agencies overcharge and under-deliver.",
   },
   {
     year: "2021",
-    title: "The 40-site year",
-    desc: "Word of mouth outsells our own site. We formalize the fixed-price model after hearing the same horror stories about hourly billing.",
+    title: "Word of mouth takes over",
+    desc: "Venue owners start referring each other. We formalize the fixed-price model after hearing the same horror stories about hourly billing.",
   },
   {
     year: "2023",
-    title: "E-commerce & beyond",
-    desc: "A dedicated commerce practice launches. We ship our 100th site and finally hire someone to keep our own website updated.",
+    title: "Hospitality goes deeper",
+    desc: "Reservations, ordering and direct-booking engines become a core practice. We ship our 100th site and finally hire someone to keep our own website updated.",
   },
   {
     year: "2026",
@@ -544,10 +557,10 @@ export const BUDGETS = [
 ];
 
 export const BUSINESS_TYPES = [
-  "SaaS / tech company",
-  "E-commerce / retail",
+  "Restaurant / café / bar",
+  "Hotel / accommodation",
+  "Retail / local shop",
   "Professional services",
-  "Local business",
   "Healthcare / wellness",
   "Nonprofit / community",
   "Other",

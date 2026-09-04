@@ -61,26 +61,24 @@ export default function Landing() {
               <Reveal y={14}>
                 <p className="inline-flex items-center gap-2.5 rounded-full border border-border bg-card/70 px-4 py-2 text-[0.82rem] font-bold text-foreground">
                   <span className="size-2 rounded-full bg-brand" />
-                  Web studio — clean sites, built to convert
+                  Websites for restaurants, cafés, hotels &amp; local businesses
                 </p>
               </Reveal>
 
               <h1 className="mt-7 text-[clamp(2.9rem,7vw,6rem)] font-extrabold leading-[0.98] tracking-[-0.04em] text-foreground">
-                <MaskLine>Clean websites,</MaskLine>
+                <MaskLine>Websites that bring</MaskLine>
                 <MaskLine delay={0.09}>
-                  made to{" "}
-                  <span className="serif-accent font-normal text-brand">move</span>
+                  customers{" "}
+                  <span className="serif-accent font-normal text-brand">through the door</span>
                 </MaskLine>
-                <MaskLine delay={0.18}>
-                  your business.
-                </MaskLine>
+                <MaskLine delay={0.18}>— online and in person.</MaskLine>
               </h1>
 
               <Reveal delay={0.35} y={22}>
                 <p className="mt-7 max-w-md text-base leading-relaxed text-muted-foreground md:text-lg">
                   Reachlynk designs and builds fast, honest websites that turn
-                  first-time visitors into paying customers — without the bloat,
-                  the jargon, or the mystery invoices.
+                  browsers into reservations, orders and regulars — without the
+                  bloat, the jargon, or the mystery invoices.
                 </p>
               </Reveal>
 
@@ -129,7 +127,7 @@ export default function Landing() {
                         <Star key={i} className="size-3.5 fill-brand text-brand" />
                       ))}
                     </span>
-                    Trusted by 40+ growing brands
+                    Trusted by 40+ venues &amp; local businesses
                   </div>
                 </div>
               </Reveal>
@@ -203,7 +201,8 @@ export default function Landing() {
           <Reveal delay={0.15}>
             <p className="max-w-md leading-relaxed text-muted-foreground lg:justify-self-end">
               One small team from strategy to launch — design, code, words and care.
-              No hand-offs to strangers, no scope creep, no 40-page decks.
+              Restaurants, cafés, hotels, shops and local businesses: no hand-offs to
+              strangers, no scope creep, no 40-page decks.
             </p>
             <Link
               to="/services"
@@ -312,21 +311,22 @@ export default function Landing() {
         kicker="What we believe"
         phrases={[
           <>
-            Visitors should <span className="serif-accent font-normal text-brand">never</span>{" "}
-            wait for a website.
+            A hungry visitor should{" "}
+            <span className="serif-accent font-normal text-brand">never wait</span> for your
+            menu.
           </>,
           <>
-            Every page should have{" "}
-            <span className="serif-accent font-normal text-brand">one job</span>.
+            Booking a table should never take more than{" "}
+            <span className="serif-accent font-normal text-brand">two taps</span>.
           </>,
           <>
             Design that can&apos;t be measured is just{" "}
             <span className="serif-accent font-normal text-brand">decoration</span>.
           </>,
           <>
-            The best website is the one that{" "}
-            <span className="serif-accent font-normal text-brand">keeps working</span> after
-            launch.
+            The best website keeps{" "}
+            <span className="serif-accent font-normal text-brand">filling tables</span> long
+            after launch.
           </>,
         ]}
       />

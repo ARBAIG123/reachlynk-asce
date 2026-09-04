@@ -25,8 +25,8 @@ export function CtaBand() {
               </MaskLine>
             </h2>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg">
-              Tell us a little about your business and we&apos;ll come back with honest
-              thoughts and a fixed quote — usually within one business day.
+              Tell us a little about your venue or business and we&apos;ll come back with
+              honest thoughts and a fixed quote — usually within one business day.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
               <Link

@@ -22,10 +22,10 @@ const NEXT_STEPS = [
 ];
 
 const AUDIT_COVERS = [
-  "Speed & Core Web Vitals — what's slow and why",
-  "Conversion killers on your key pages",
-  "Mobile experience & accessibility red flags",
-  "SEO basics you're missing",
+  "Menu, booking & contact paths — where customers get stuck",
+  "Speed & mobile experience on real phones",
+  "Google visibility: maps, reviews & local search",
+  "Design & trust signals on your key pages",
   "The three highest-impact fixes, prioritized",
 ];
 

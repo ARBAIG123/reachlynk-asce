@@ -57,9 +57,9 @@ export function SiteFooter() {
             <h3 className="eyebrow text-muted-foreground">Services</h3>
             <ul className="mt-5 flex flex-col gap-2.5">
               {[
-                "Website design & build",
-                "E-commerce",
-                "Redesigns",
+                "Restaurant & café websites",
+                "Hotels & direct booking",
+                "Local business redesigns",
                 "Brand & identity",
                 "Care plans",
               ].map((label) => (

@@ -26,9 +26,10 @@ export default function About() {
             </h1>
             <Reveal delay={0.35}>
               <p className="mt-7 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">
-                We&apos;re eight designers, developers and writers who believe most
-                websites are overpriced, overbuilt and under-thought. Reachlynk exists
-                to fix that — one clean launch at a time.
+                We&apos;re eight designers, developers and writers building for
+                restaurants, cafés, hotels and local businesses — because we believe
+                most websites are overpriced, overbuilt and under-thought. Reachlynk
+                exists to fix that, one clean launch at a time.
               </p>
             </Reveal>
             <Reveal delay={0.45}>
@@ -84,9 +85,9 @@ export default function About() {
         <div className="mx-auto max-w-3xl">
           <Reveal>
             <p className="serif-accent text-[clamp(1.7rem,3.4vw,2.7rem)] leading-snug text-foreground">
-              Reachlynk started in 2019 when two friends kept watching brilliant small
-              businesses get fleeced by agencies that charged fortunes for bloated,
-              broken websites.
+              Reachlynk started in 2019 when two friends kept watching brilliant
+              restaurants, cafés and local shops get fleeced by agencies that charged
+              fortunes for bloated, broken websites.
             </p>
           </Reveal>
           <Reveal delay={0.12}>
@@ -95,7 +96,8 @@ export default function About() {
               first call, launch dates treated like promises, and design that
               prioritizes your customer&apos;s time over our portfolio&apos;s drama. Seven
               years later the team is eight people, the standard hasn&apos;t moved, and most
-              of our work still arrives by word of mouth.
+              of our work — from reservations to direct bookings to neighborhood
+              orders — still arrives by word of mouth.
             </p>
           </Reveal>
           <Reveal delay={0.2}>
@@ -152,7 +154,8 @@ export default function About() {
             <Reveal delay={0.15}>
               <p className="mt-6 max-w-sm leading-relaxed text-muted-foreground">
                 No acquisition stories, no "growth hacking". Just a slow, deliberate
-                build of a studio that keeps its promises.
+                build of a studio that keeps its promises — and fills its clients&apos;
+                tables.
               </p>
             </Reveal>
           </div>
