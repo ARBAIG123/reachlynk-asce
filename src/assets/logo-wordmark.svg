@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 160" fill="none">
+  <!-- "reach" in dark brown -->
+  <text x="0" y="105" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="112" letter-spacing="-3" fill="#3D2213">reach</text>
+  <!-- "lynk" in terracotta -->
+  <text x="310" y="105" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="112" letter-spacing="-3" fill="#C0533A">lynk</text>
+  <!-- Arrow from h extending right -->
+  <path d="M340 82 L370 82" stroke="#3D2213" stroke-width="6" stroke-linecap="round"/>
+  <path d="M358 72 L372 82 L358 92" stroke="#3D2213" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Tagline -->
+  <text x="100" y="145" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="16" letter-spacing="6" fill="#6B5D52">FROM </text>
+  <text x="195" y="145" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="16" letter-spacing="6" fill="#C0533A">CLICKS</text>
+  <text x="312" y="145" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="16" letter-spacing="6" fill="#6B5D52"> TO CLIENTS.</text>
+</svg>

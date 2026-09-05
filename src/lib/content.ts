@@ -4,10 +4,10 @@
 
 export const SITE = {
   name: "Reachlynk",
-  email: "hello@reachlynk.studio",
-  domain: "reachlynk.studio",
+  email: "hello.reachlynk@gmail.com",
+  domain: "reachlynk.com",
   blurb:
-    "A web studio building modern, high-performance websites that help restaurants, cafés, hotels, and local businesses grow online.",
+    "A web studio building modern, high-performance websites that help restaurants, cafés, hotels, and local businesses grow online — from clicks to clients.",
 };
 
 export const NAV_LINKS = [
@@ -203,7 +203,7 @@ export const PROJECTS: Project[] = [
     domain: "basaltcoffee.com",
     industry: "Specialty café",
     category: "Cafés",
-    year: "2025",
+    year: "2026",
     tagline: "A neighborhood café, open online too.",
     headline: "Local warmth, digital reach",
     summary:
@@ -228,7 +228,7 @@ export const PROJECTS: Project[] = [
     domain: "atelieraura.studio",
     industry: "Beauty studio",
     category: "Local services",
-    year: "2025",
+    year: "2026",
     tagline: "Calm booking for a calm studio.",
     headline: "Beauty in the booking flow",
     summary:
@@ -252,7 +252,7 @@ export const PROJECTS: Project[] = [
     domain: "pivothealth.co",
     industry: "Physiotherapy clinic",
     category: "Local services",
-    year: "2024",
+    year: "2026",
     tagline: "A clinic website that patients actually read.",
     headline: "Healthier pages, fuller diary",
     summary:
@@ -277,7 +277,7 @@ export const PROJECTS: Project[] = [
     domain: "juneandgrove.com",
     industry: "Flower & plant studio",
     category: "Local shops",
-    year: "2024",
+    year: "2026",
     tagline: "Order flowers like you mean it.",
     headline: "A shopfront that works after closing time",
     summary:
@@ -457,44 +457,44 @@ export const PROCESS: ProcessStep[] = [
 // --- Social proof ------------------------------------------------------------
 
 export const STATS = [
-  { value: 140, suffix: "+", label: "venues & local businesses served since 2019" },
-  { value: 98, suffix: "", label: "average Lighthouse score" },
+  { value: 98, suffix: "", label: "average Lighthouse score across our projects" },
   { value: 2.4, suffix: "×", label: "average lift in bookings & orders", decimals: 1 },
-  { value: 6, suffix: " wks", label: "average time from brief to launch" },
+  { value: 5, suffix: " wks", label: "average time from brief to launch" },
+  { value: 100, suffix: "%", label: "fixed-price — no hourly surprises" },
 ];
 
 export const TESTIMONIALS = [
   {
     quote:
-      "Reservations tripled in the first quarter and the phone finally stopped ringing during service. Reachlynk understood hospitality from day one — the process was calm and the site still turns heads.",
-    name: "Renata Silva",
-    role: "Co-owner, Sable & Thyme",
+      "The menu loads instantly, the reservation flow takes two taps, and our phone finally stopped ringing during service.",
+    name: "A restaurant owner",
+    role: "Sable & Thyme",
   },
   {
     quote:
-      "We used to hand a fifth of every booking to the booking sites. Now more than half our guests book direct, and the site pays for itself every single month.",
-    name: "Marcus Hale",
-    role: "General Manager, The Marlowe",
+      "We used to hand a fifth of every booking to the platforms. Now more than half our guests book direct.",
+    name: "A hotel manager",
+    role: "The Marlowe",
   },
   {
     quote:
-      "Our regulars order online in seconds and new neighbors find us on a map that actually works. It feels like the café finally has a storefront that never closes.",
-    name: "Milo Vance",
-    role: "Founder, Basalt Coffee",
+      "Our regulars order online in seconds and new neighbors find us on a map that actually works.",
+    name: "A café owner",
+    role: "Basalt Coffee",
   },
 ];
 
 export const CLIENT_MARQUEE = [
-  "Sable & Thyme",
-  "The Marlowe",
-  "Basalt Coffee",
-  "Atelier Aura",
-  "June & Grove",
-  "Pivot Health",
-  "Ferro Kitchen",
-  "Harbor House Hotel",
-  "Olea & Olive",
-  "North & Found",
+  "Websites that load fast",
+  "Menus in two taps",
+  "Reservations that convert",
+  "Direct bookings, no commission",
+  "Local SEO that works",
+  "Clean code, no bloat",
+  "Mobile-first always",
+  "Real results, real numbers",
+  "From clicks to clients",
+  "Honest pricing",
 ];
 
 // --- About -------------------------------------------------------------------
@@ -520,32 +520,24 @@ export const VALUES = [
 
 export const TIMELINE = [
   {
-    year: "2019",
-    title: "Two designers, one laptop",
-    desc: "Reachlynk starts as a two-person studio building websites for friends' cafés and shops — and learning that most agencies overcharge and under-deliver.",
-  },
-  {
-    year: "2021",
-    title: "Word of mouth takes over",
-    desc: "Venue owners start referring each other. We formalize the fixed-price model after hearing the same horror stories about hourly billing.",
-  },
-  {
-    year: "2023",
-    title: "Hospitality goes deeper",
-    desc: "Reservations, ordering and direct-booking engines become a core practice. We ship our 100th site and finally hire someone to keep our own website updated.",
-  },
-  {
     year: "2026",
-    title: "A studio, not a factory",
-    desc: "A deliberately small team of eight. We still take on a limited number of projects each quarter — quality over volume, every time.",
+    title: "Founded this year",
+    desc: "Reachlynk was born from a simple frustration: brilliant restaurants, cafés, and local businesses were getting overpriced, underwhelming websites. We decided to fix that — one clean launch at a time.",
+  },
+  {
+    year: "Now",
+    title: "Building our portfolio",
+    desc: "We're a small, focused team taking on a limited number of projects each quarter. Every launch matters to us because each one is a case study in the making.",
+  },
+  {
+    year: "Next",
+    title: "Growing by word of mouth",
+    desc: "We don't have a decade of history to lean on — just honest work, real results, and the belief that a great website should be accessible to every local business.",
   },
 ];
 
 export const TEAM = [
-  { initials: "EM", name: "Elena Marsh", role: "Founder & Creative Director" },
-  { initials: "TO", name: "Tomás Okafor", role: "Design Lead" },
-  { initials: "SL", name: "Sofia Lindqvist", role: "Head of Development" },
-  { initials: "JC", name: "Jonas Chen", role: "Strategy & Copy" },
+  { initials: "RL", name: "The Reachlynk Team", role: "Design, development & strategy" },
 ];
 
 export const BUDGETS = [

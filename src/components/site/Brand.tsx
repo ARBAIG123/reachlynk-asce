@@ -1,25 +1,30 @@
 import { cn } from "@/lib/utils";
-import logo from "@/assets/logo.svg";
+import wordmark from "@/assets/logo-wordmark.svg";
+import icon from "@/assets/logo.svg";
 import { Link } from "react-router";
 
-export function Brand({ className }: { className?: string }) {
+export function Brand({ className, wordmark: showWordmark = true }: { className?: string; wordmark?: boolean }) {
   return (
     <Link
       to="/"
       aria-label="Reachlynk — home"
       className={cn("group flex items-center gap-2.5", className)}
     >
-      <img
-        src={logo}
-        alt=""
-        width={36}
-        height={36}
-        className="h-9 w-9 rounded-[10px] transition-transform duration-500 group-hover:rotate-[8deg]"
-      />
-      <span className="flex items-baseline gap-[0.2em] text-[1.22rem] font-extrabold tracking-[-0.02em] text-foreground">
-        Reachlynk
-        <span className="h-[0.34em] w-[0.34em] rounded-full bg-brand transition-transform duration-500 group-hover:translate-y-[-2px]" />
-      </span>
+      {showWordmark ? (
+        <img
+          src={wordmark}
+          alt="Reachlynk"
+          className="h-8 w-auto md:h-9 transition-transform duration-500 group-hover:scale-[1.02]"
+        />
+      ) : (
+        <img
+          src={icon}
+          alt="Reachlynk"
+          width={36}
+          height={36}
+          className="h-9 w-9 transition-transform duration-500 group-hover:rotate-[8deg]"
+        />
+      )}
     </Link>
   );
 }
