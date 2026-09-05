@@ -186,7 +186,7 @@ export default function Landing() {
       </section>
 
       {/* ================= SERVICES ================= */}
-      <section className="shell py-24 md:py-36">
+      <section className="shell py-20 md:py-28">
         <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr] lg:items-end">
           <div>
             <SectionEyebrow>What we do</SectionEyebrow>
@@ -241,7 +241,7 @@ export default function Landing() {
       </section>
 
       {/* ================= SELECTED WORK — pinned horizontal ================= */}
-      <section className="bg-secondary/55 py-24 md:py-32">
+      <section className="bg-secondary/55 py-20 md:py-28">
         <div className="shell flex flex-wrap items-end justify-between gap-6">
           <div>
             <SectionEyebrow>Selected work</SectionEyebrow>
@@ -307,6 +307,7 @@ export default function Landing() {
       </section>
 
       {/* ================= PINNED MANIFESTO ================= */}
+      <section className="py-20 md:py-24">
       <PinnedPhrases
         kicker="What we believe"
         phrases={[
@@ -331,8 +332,9 @@ export default function Landing() {
         ]}
       />
 
+      </section>
       {/* ================= STATS + PROOF ================= */}
-      <section className="shell py-24 md:py-32">
+      <section className="shell py-20 md:py-28">
         <div className="grid items-center gap-16 lg:grid-cols-[1fr_1.15fr]">
           <div>
             <SectionEyebrow>Proof, not promises</SectionEyebrow>
@@ -383,7 +385,7 @@ export default function Landing() {
       </section>
 
       {/* ================= PROCESS STRIP ================= */}
-      <section className="border-t border-border/70 bg-card/60 py-24 md:py-28">
+      <section className="border-t border-border/70 bg-card/60 py-20 md:py-24">
         <div className="shell">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <div>
@@ -432,7 +434,7 @@ export default function Landing() {
       </section>
 
       {/* ================= VELOCITY OUTRO STRIP ================= */}
-      <section className="overflow-hidden py-14 md:py-20" aria-hidden>
+      <section className="overflow-hidden py-10 md:py-16" aria-hidden>
         <VelocityWord className="w-full">
           <p className="text-outline whitespace-nowrap text-[clamp(4rem,13vw,12rem)] font-extrabold uppercase leading-none tracking-[-0.02em]">
             Clean · Fast · Human&nbsp;&nbsp;Clean · Fast · Human

@@ -172,7 +172,7 @@ export function SiteHeader() {
                 transition={{ delay: 0.5 }}
                 className="text-sm font-medium text-muted-foreground"
               >
-                hello@reachlynk.studio · replies within one business day
+hello@reachlynk@gmail.com · replies within one business day
               </motion.p>
             </nav>
           </motion.div>

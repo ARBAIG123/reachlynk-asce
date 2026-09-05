@@ -13,7 +13,7 @@ const SOCIALS = [
 
 export function SiteFooter() {
   return (
-    <footer className="border-t border-border/80 bg-background">
+    <footer className="border-t border-border/80 bg-secondary">
       <div className="shell py-16 md:py-20">
         <div className="grid gap-12 md:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           <div>
@@ -105,12 +105,12 @@ export function SiteFooter() {
 
         <div className="mt-14 flex flex-col gap-3 border-t border-border/70 pt-7 text-[0.8rem] font-medium text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} Reachlynk Studio. Made with care — clean, fast,
+            © {new Date().getFullYear()} Reachlynk. Made with care — clean, fast,
             human.
           </p>
           <p>
             Working worldwide · Amsterdam &amp; Portland ·{" "}
-            <span className="serif-accent text-[0.95rem] text-foreground/80">est. 2019</span>
+            <span className="serif-accent text-[0.95rem] text-foreground/80">est. 2026</span>
           </p>
         </div>
       </div>

@@ -192,7 +192,7 @@ export default function Contact() {
             )}
 
             <div className="rounded-3xl border border-border bg-card p-7">
-              <h2 className="text-lg font-extrabold tracking-tight">Reachlynk Studio</h2>
+              <h2 className="text-lg font-extrabold tracking-tight">Reachlynk</h2>
               <ul className="mt-4 flex flex-col gap-3 text-sm font-semibold text-foreground/80">
                 <li className="flex items-center gap-3">
                   <Mail className="size-4 text-brand" />

@@ -271,17 +271,19 @@ function PinnedPhrase({
 }) {
   const from = index / total;
   const to = (index + 1) / total;
-  const fade = 0.12;
+  const fade = 0.15;
   const opacity = useTransform(
     progress,
     [Math.max(0, from - fade), from, to, Math.min(1, to + fade)],
     [0, 1, 1, 0],
   );
-  const y = useTransform(progress, [from, to], [46, -46]);
-  const scale = useTransform(progress, [from, to], [0.96, 1.03]);
+  // Slide in from left, then slide out to right
+  const x = useTransform(progress, [from, to], [-80, 80]);
+  // Zoom in slightly as it appears
+  const scale = useTransform(progress, [from, to], [0.92, 1.08]);
   return (
     <motion.p
-      style={{ opacity, y, scale }}
+      style={{ opacity, x, scale }}
       className="absolute inset-0 flex items-center justify-center px-2 text-center text-[clamp(2rem,5.6vw,4.6rem)] leading-[1.05] font-extrabold tracking-[-0.03em]"
     >
       {text}

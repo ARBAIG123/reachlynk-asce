@@ -180,7 +180,7 @@ export default function Pricing() {
       </section>
 
       {/* ================= FAQ ================= */}
-      <section className="shell py-20 md:py-28">
+      <section className="shell py-16 md:py-24">
         <div className="mx-auto max-w-3xl">
           <div className="text-center">
             <p className="eyebrow text-brand">Questions</p>

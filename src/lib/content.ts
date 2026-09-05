@@ -485,16 +485,16 @@ export const TESTIMONIALS = [
 ];
 
 export const CLIENT_MARQUEE = [
-  "Websites that load fast",
-  "Menus in two taps",
-  "Reservations that convert",
-  "Direct bookings, no commission",
-  "Local SEO that works",
-  "Clean code, no bloat",
-  "Mobile-first always",
-  "Real results, real numbers",
+  "We build modern websites",
+  "for restaurants & cafés",
+  "for hotels & local businesses",
+  "Design · Code · Strategy",
+  "Clean, fast & human",
   "From clicks to clients",
-  "Honest pricing",
+  "Real results, honest pricing",
+  "Mobile-first always",
+  "Built to convert",
+  "Reachlynk — Web Studio",
 ];
 
 // --- About -------------------------------------------------------------------
@@ -522,7 +522,7 @@ export const TIMELINE = [
   {
     year: "2026",
     title: "Founded this year",
-    desc: "Reachlynk was born from a simple frustration: brilliant restaurants, cafés, and local businesses were getting overpriced, underwhelming websites. We decided to fix that — one clean launch at a time.",
+    desc: "We started Reachlynk because restaurants, cafés, and local businesses deserve better websites — and honest pricing. One clean launch at a time.",
   },
   {
     year: "Now",

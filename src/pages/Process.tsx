@@ -39,7 +39,7 @@ export default function Process() {
       </section>
 
       {/* ================= STEPS ================= */}
-      <section className="shell pb-24 md:pb-32">
+      <section className="shell pb-20 md:pb-28">
         <div className="grid gap-16 lg:grid-cols-[0.72fr_1.28fr]">
           {/* sticky rail */}
           <div className="lg:sticky lg:top-28 lg:self-start">

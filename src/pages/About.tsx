@@ -26,7 +26,7 @@ export default function About() {
             </h1>
             <Reveal delay={0.35}>
               <p className="mt-7 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">
-                We&apos;re eight designers, developers and writers building for
+                We&apos;re a small studio building for
                 restaurants, cafés, hotels and local businesses — because we believe
                 most websites are overpriced, overbuilt and under-thought. Reachlynk
                 exists to fix that, one clean launch at a time.
@@ -81,23 +81,23 @@ export default function About() {
       </section>
 
       {/* ================= STORY ================= */}
-      <section className="shell py-20 md:py-24">
+      <section className="shell py-16 md:py-20">
         <div className="mx-auto max-w-3xl">
           <Reveal>
             <p className="serif-accent text-[clamp(1.7rem,3.4vw,2.7rem)] leading-snug text-foreground">
-              Reachlynk started in 2019 when two friends kept watching brilliant
-              restaurants, cafés and local shops get fleeced by agencies that charged
-              fortunes for bloated, broken websites.
+              Reachlynk was born from a simple frustration: brilliant restaurants,
+              cafés and local shops were getting overpriced, underwhelming websites.
             </p>
           </Reveal>
           <Reveal delay={0.12}>
             <p className="mt-8 leading-relaxed text-muted-foreground">
-              So we built the studio we wished existed: fixed prices written on the
-              first call, launch dates treated like promises, and design that
-              prioritizes your customer&apos;s time over our portfolio&apos;s drama. Seven
-              years later the team is eight people, the standard hasn&apos;t moved, and most
-              of our work — from reservations to direct bookings to neighborhood
-              orders — still arrives by word of mouth.
+              We decided to fix that — one clean launch at a time. We built the studio
+              we wished existed: fixed prices written on the first call, launch dates
+              treated like promises, and design that prioritizes your customer&apos;s time
+              over our portfolio&apos;s drama. We&apos;re a small, focused team taking on a
+              limited number of projects each quarter, and most of our work — from
+              reservations to direct bookings to neighborhood orders — arrives by word
+              of mouth.
             </p>
           </Reveal>
           <Reveal delay={0.2}>
@@ -111,7 +111,7 @@ export default function About() {
       </section>
 
       {/* ================= VALUES ================= */}
-      <section className="bg-secondary/70 py-24 md:py-32">
+      <section className="bg-secondary/70 py-20 md:py-28">
         <div className="shell">
           <p className="eyebrow flex items-center gap-3 text-brand">
             <span className="h-px w-8 bg-brand/60" />
@@ -140,7 +140,7 @@ export default function About() {
       </section>
 
       {/* ================= TIMELINE ================= */}
-      <section className="shell py-24 md:py-32">
+      <section className="shell py-20 md:py-28">
         <div className="grid gap-14 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="eyebrow flex items-center gap-3 text-brand">
@@ -148,7 +148,7 @@ export default function About() {
               The story so far
             </p>
             <h2 className="mt-6 text-[clamp(2rem,4.2vw,3.6rem)] font-extrabold leading-[1.02] tracking-[-0.035em]">
-              Seven years,{" "}
+              Started this year,{" "}
               <span className="serif-accent font-normal text-brand">one standard</span>.
             </h2>
             <Reveal delay={0.15}>
@@ -207,7 +207,7 @@ export default function About() {
       </section>
 
       {/* ================= TEAM ================= */}
-      <section className="shell py-24 md:py-32">
+      <section className="shell py-20 md:py-28">
         <p className="eyebrow flex items-center gap-3 text-brand">
           <span className="h-px w-8 bg-brand/60" />
           The humans

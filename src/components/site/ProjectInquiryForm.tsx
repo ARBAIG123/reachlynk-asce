@@ -65,7 +65,7 @@ export function ProjectInquiryForm({ mode }: { mode: InquiryMode }) {
       console.error("Inquiry submit failed", error);
       setStatus("idle");
       toast.error("Something went wrong", {
-        description: "Please try again, or email hello@reachlynk.studio directly.",
+        description: "Please try again, or email hello.reachlynk@gmail.com directly.",
       });
     }
   };
@@ -204,7 +204,7 @@ export function ProjectInquiryForm({ mode }: { mode: InquiryMode }) {
             placeholder={
               mode === "project"
                 ? "We run a neighbourhood restaurant and want a site where guests can read the menu and book a table in two taps…"
-                : "Our site was built in 2019, takes forever to load, and doesn't bring in the bookings our food deserves…"
+                : "Our site is slow, looks dated, and doesn't bring in the bookings our food deserves…"
             }
             className={cn(inputClasses, "h-auto resize-none py-3.5 leading-relaxed")}
           />

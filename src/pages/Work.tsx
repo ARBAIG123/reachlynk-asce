@@ -162,7 +162,7 @@ export default function Work() {
       </section>
 
       {/* ================= ALL CASES ================= */}
-      <section className="shell pb-24 md:pb-32">
+      <section className="shell pb-20 md:pb-28">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <h2 className="text-[clamp(2rem,4.4vw,3.6rem)] font-extrabold leading-[1.02] tracking-[-0.035em]">
             More recent{" "}
@@ -277,7 +277,7 @@ export default function Work() {
       </section>
 
       {/* ================= CLOSING QUOTE + CTA ================= */}
-      <section className="shell py-24 md:py-32">
+      <section className="shell py-20 md:py-28">
         <div className="mx-auto max-w-3xl text-center">
           <Reveal>
             <div className="flex justify-center gap-1.5">
