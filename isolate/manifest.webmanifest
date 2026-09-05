@@ -1,0 +1,17 @@
+{
+  "name": "Reachlynk — Clean websites, carefully made",
+  "short_name": "Reachlynk",
+  "description": "Reachlynk is a web studio building clean, fast, conversion-focused websites for businesses that care how they're seen.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf7f1",
+  "theme_color": "#faf7f1",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
