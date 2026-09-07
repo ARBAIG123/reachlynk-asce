@@ -9,11 +9,11 @@ import { cn } from "@/lib/utils";
 const NEXT_STEPS = [
   {
     title: "We read it, personally",
-    desc: "A real person replies within one business day — usually Elena or Tomás, not a sales queue.",
+    desc: "A real person replies within one business day — usually a founder, not a sales queue.",
   },
   {
     title: "A 20-minute call",
-    desc: "We ask sharp questions about your goals, audience and budget. You'll leave clearer than you arrived.",
+    desc: "We ask sharp questions about your goals, audience, and budget. You'll leave clearer than you arrived.",
   },
   {
     title: "A fixed proposal",

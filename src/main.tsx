@@ -189,7 +189,7 @@ createRoot(document.getElementById("root")!).render(
                   </RequireAuth>
                 }
               />
-              <Route path="/terms" element={<Terms />} />
+              <Route path="/terms" element={<SiteLayout><Terms /></SiteLayout>} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>

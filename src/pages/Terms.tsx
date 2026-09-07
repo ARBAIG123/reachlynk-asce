@@ -60,7 +60,7 @@ export default function Terms() {
               <p>
                 Each plan includes a defined number of revision rounds. Additional revisions
                 beyond the included rounds may be subject to a separate fee, communicated
-                in advance. Business and Premium plans include unlimited revisions during the
+                in advance. The Business plan includes unlimited revisions during the
                 build phase.
               </p>
             </div>

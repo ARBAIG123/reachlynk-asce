@@ -69,11 +69,11 @@ export default function Process() {
             </div>
             <div className="mt-6 hidden rounded-[1.8rem] bg-secondary p-8 lg:block">
               <p className="serif-accent text-[1.5rem] leading-snug">
-                “The calmest project we&apos;ve ever run. We always knew what was happening
-                next.”
+                “Most projects run five to six weeks total. We keep things calm
+                and predictable.”
               </p>
               <p className="mt-4 text-xs font-bold text-muted-foreground">
-                — A very relieved client
+                — The Reachlynk team
               </p>
             </div>
           </div>

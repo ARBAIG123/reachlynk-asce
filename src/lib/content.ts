@@ -366,7 +366,7 @@ export const PRICING_FAQS = [
   },
   {
     q: "How long does a project take?",
-    a: "A Starter page ships in about two weeks, a Business site in about four, and Premium projects typically land within six. You'll get a launch date in your proposal — we treat it as a promise.",
+    a: "A Starter page ships in about two weeks and a Business site in about four. You'll get a launch date in your proposal — we treat it as a promise.",
   },
   {
     q: "Do I need to be technical?",
@@ -378,7 +378,7 @@ export const PRICING_FAQS = [
   },
   {
     q: "What if I'm not happy with the design?",
-    a: "Design feedback is part of the process — Business and Premium plans include unlimited revision rounds until launch. We iterate in the open, so there are no big surprises at the end.",
+    a: "Design feedback is part of the process — the Business plan includes unlimited revision rounds until launch. We iterate in the open, so there are no big surprises at the end.",
   },
 ];
 
