@@ -5,10 +5,10 @@ import { smoothScrollTo } from "@/lib/scroll";
 import { Brand } from "@/components/site/Brand";
 
 const SOCIALS = [
-  { label: "Instagram", href: "https://instagram.com" },
-  { label: "LinkedIn", href: "https://linkedin.com" },
-  { label: "Twitter / X", href: "https://x.com" },
-  { label: "Dribbble", href: "https://dribbble.com" },
+  { label: "Instagram", href: "https://www.instagram.com/reachlynk.in/" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/reach-lynk-27a446434/" },
+  { label: "Twitter / X", href: "https://x.com/reachlynk_in" },
+  { label: "Dribbble", href: "https://dribbble.com/reach-lynk" },
 ];
 
 export function SiteFooter() {
