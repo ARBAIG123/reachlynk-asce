@@ -26,8 +26,54 @@ const SiteLayout = lazy(() => import("./components/site/SiteLayout.tsx"));
 // Simple loading fallback for route transitions
 function RouteLoading() {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <div className="animate-pulse text-muted-foreground">Loading...</div>
+    <div className="flex min-h-screen flex-col items-center justify-center bg-background">
+      {/* Logo mark */}
+      <div className="relative mb-6">
+        <svg
+          className="size-14 animate-spin-slower opacity-20"
+          viewBox="0 0 200 200"
+          fill="none"
+          aria-hidden
+        >
+          <path
+            d="M100 30 Q130 60 120 100 Q130 140 100 170 Q70 140 80 100 Q70 60 100 30Z"
+            className="fill-brand/30"
+          />
+          <path
+            d="M150 60 Q130 80 110 100 Q130 120 150 140 Q170 120 160 100 Q170 80 150 60Z"
+            className="fill-brand/20"
+          />
+          <path
+            d="M50 60 Q70 80 90 100 Q70 120 50 140 Q30 120 40 100 Q30 80 50 60Z"
+            className="fill-brand/20"
+          />
+        </svg>
+        <span className="absolute inset-0 flex items-center justify-center">
+          <span className="size-2.5 rounded-full bg-brand/70" />
+        </span>
+      </div>
+      {/* Brand name */}
+      <p className="text-sm font-extrabold uppercase tracking-[0.25em] text-foreground/40">
+        Reachlynk
+      </p>
+      {/* Animated dots */}
+      <div className="mt-4 flex items-center gap-1.5">
+        {[0, 1, 2].map((i) => (
+          <span
+            key={i}
+            className="size-1 rounded-full bg-brand/50"
+            style={{
+              animation: `rl-dot-pulse 1.4s ease-in-out ${i * 0.2}s infinite`,
+            }}
+          />
+        ))}
+      </div>
+      <style>{`
+        @keyframes rl-dot-pulse {
+          0%, 80%, 100% { opacity: 0.3; transform: scale(0.8); }
+          40% { opacity: 1; transform: scale(1.2); }
+        }
+      `}</style>
     </div>
   );
 }
