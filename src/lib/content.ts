@@ -548,11 +548,12 @@ export interface TeamMember {
 
 export const TEAM: TeamMember[] = [
   {
-    initials: "AR",
-    name: "Alex Rivera",
-    role: "Creative Director",
+    initials: "MR",
+    name: "Mohammed Abdur Rehman Baig",
+    role: "Founder & Lead Developer",
     socials: [
       { platform: "linkedin", url: "https://linkedin.com" },
+      { platform: "github", url: "https://github.com" },
       { platform: "instagram", url: "https://instagram.com" },
     ],
   },
