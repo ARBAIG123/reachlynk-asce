@@ -11,11 +11,11 @@ export const SITE = {
 };
 
 export const NAV_LINKS = [
-  { label: "Work", to: "/work" },
   { label: "Services", to: "/services" },
   { label: "Pricing", to: "/pricing" },
   { label: "About", to: "/about" },
   { label: "Process", to: "/process" },
+  { label: "Contact", to: "/contact" },
 ] as const;
 
 // --- Services ---------------------------------------------------------------

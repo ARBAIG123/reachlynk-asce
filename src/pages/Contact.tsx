@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight, CalendarCheck, Clock3, FileSearch, Mail, MapPin, Sparkles } from "lucide-react";
-import { Link, useSearchParams } from "react-router";
+import { CalendarCheck, Clock3, FileSearch, Mail, MapPin, Sparkles } from "lucide-react";
+import { useSearchParams } from "react-router";
 import { ProjectInquiryForm, type InquiryMode } from "@/components/site/ProjectInquiryForm";
 import { MaskLine, Reveal } from "@/components/site/motion";
 import { SITE } from "@/lib/content";
@@ -112,7 +112,7 @@ export default function Contact() {
       </section>
 
       {/* ================= FORM + RAIL ================= */}
-      <section className="shell pb-16 md:pb-24">
+      <section className="shell pb-12 md:pb-16">
         <div className="grid gap-10 lg:grid-cols-[1.35fr_0.65fr]">
           <Reveal delay={0.15}>
             <ProjectInquiryForm mode={mode} />
@@ -209,17 +209,6 @@ export default function Contact() {
                   Amsterdam · Portland · everywhere
                 </li>
               </ul>
-              <div className="mt-6 flex items-center gap-2.5 border-t border-border/70 pt-5">
-                <span className="serif-accent text-[1.05rem] text-foreground/70">
-                  Prefer to browse first?
-                </span>
-                <Link
-                  to="/work"
-                  className="inline-flex items-center gap-1 text-sm font-extrabold text-brand underline decoration-brand/40 underline-offset-4"
-                >
-                  See our work <ArrowUpRight className="size-3.5" />
-                </Link>
-              </div>
             </div>
           </div>
         </div>

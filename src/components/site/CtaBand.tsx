@@ -6,9 +6,9 @@ import { buttonVariants } from "@/components/ui/button";
 
 export function CtaBand() {
   return (
-    <section className="shell pb-24 pt-8 md:pb-32">
+    <section className="shell pb-12 pt-6 md:pb-16">
       <Reveal>
-        <div className="relative overflow-hidden rounded-[2rem] border border-border/80 bg-secondary px-6 py-16 sm:px-12 md:rounded-[2.5rem] md:px-16 md:py-24">
+        <div className="relative overflow-hidden rounded-[2rem] border border-border/80 bg-secondary px-6 py-12 sm:px-12 md:rounded-[2.5rem] md:px-16 md:py-18">
           {/* subtle oversized asterisk */}
           <span
             aria-hidden
@@ -50,7 +50,7 @@ export function CtaBand() {
                 <ArrowRight className="size-5" />
               </Link>
             </div>
-            <p className="mt-7 text-sm font-medium text-muted-foreground">
+            <p className="mt-5 text-sm font-medium text-muted-foreground">
               No pressure, no spam — and the audit is genuinely free.
             </p>
           </div>

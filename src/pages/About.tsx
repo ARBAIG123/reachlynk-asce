@@ -1,10 +1,7 @@
-import { ArrowUpRight } from "lucide-react";
-import { Link } from "react-router";
 import { ClipReveal, CountUp, MaskLine, Reveal, VelocityWord } from "@/components/site/motion";
-import { BrowserMock, MetricChip } from "@/components/site/SiteMock";
+import { BrowserMock } from "@/components/site/SiteMock";
 import { cn } from "@/lib/utils";
 import { PROJECTS, STATS, TEAM, TIMELINE, VALUES } from "@/lib/content";
-import { buttonVariants } from "@/components/ui/button";
 
 export default function About() {
   return (
@@ -25,35 +22,12 @@ export default function About() {
               <MaskLine delay={0.2}>nonsense.</MaskLine>
             </h1>
             <Reveal delay={0.35}>
-              <p className="mt-7 max-w-lg text-base leading-relaxed text-muted-foreground md:text-lg">
+              <p className="mt-7 max-w-lg text-lg leading-relaxed text-muted-foreground">
                 We&apos;re a small studio building for
                 restaurants, cafés, hotels and local businesses — because we believe
                 most websites are overpriced, overbuilt and under-thought. Reachlynk
                 exists to fix that, one clean launch at a time.
               </p>
-            </Reveal>
-            <Reveal delay={0.45}>
-              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
-                <Link
-                  to="/contact?mode=project"
-                  className={cn(
-                    buttonVariants({ variant: "default" }),
-                    "group h-[52px] gap-2.5 rounded-full px-7 text-base font-bold",
-                  )}
-                >
-                  Start a project
-                  <ArrowUpRight className="size-5 transition-transform duration-300 group-hover:translate-x-[2px] group-hover:-translate-y-[2px]" />
-                </Link>
-                <Link
-                  to="/work"
-                  className={cn(
-                    buttonVariants({ variant: "outline" }),
-                    "h-[52px] rounded-full border-foreground/25 bg-transparent px-7 text-base font-bold",
-                  )}
-                >
-                  See our work
-                </Link>
-              </div>
             </Reveal>
           </div>
 
@@ -66,22 +40,15 @@ export default function About() {
               <ClipReveal>
                 <div className="relative rounded-[2rem] border border-border bg-card p-5">
                   <BrowserMock project={PROJECTS[3]} />
-                  <p className="serif-accent mt-4 px-2 pb-2 text-[1.15rem] text-muted-foreground">
-                    The studio wall, probably — mockups everywhere.
-                  </p>
                 </div>
               </ClipReveal>
-              <MetricChip
-                project={PROJECTS[3]}
-                className="absolute -bottom-6 -right-2 z-10 hidden max-w-[17rem] lg:flex"
-              />
             </div>
           </Reveal>
         </div>
       </section>
 
       {/* ================= STORY ================= */}
-      <section className="shell py-16 md:py-20">
+      <section className="shell py-14 md:py-18">
         <div className="mx-auto max-w-3xl">
           <Reveal>
             <p className="serif-accent text-[clamp(1.7rem,3.4vw,2.7rem)] leading-snug text-foreground">
@@ -90,7 +57,7 @@ export default function About() {
             </p>
           </Reveal>
           <Reveal delay={0.12}>
-            <p className="mt-8 leading-relaxed text-muted-foreground">
+            <p className="mt-6 leading-relaxed text-muted-foreground">
               We decided to fix that — one clean launch at a time. We built the studio
               we wished existed: fixed prices written on the first call, launch dates
               treated like promises, and design that prioritizes your customer&apos;s time
@@ -101,7 +68,7 @@ export default function About() {
             </p>
           </Reveal>
           <Reveal delay={0.2}>
-            <p className="mt-8 leading-relaxed text-muted-foreground">
+            <p className="mt-6 leading-relaxed text-muted-foreground">
               We stay deliberately small and take a limited number of projects each
               quarter. That&apos;s not scarcity theatre — it&apos;s the only way the person you
               talk to on day one is still the person building your site on day forty.
@@ -111,24 +78,24 @@ export default function About() {
       </section>
 
       {/* ================= VALUES ================= */}
-      <section className="bg-secondary/70 py-20 md:py-28">
+      <section className="bg-secondary/70 py-16 md:py-22">
         <div className="shell">
           <p className="eyebrow flex items-center gap-3 text-brand">
             <span className="h-px w-8 bg-brand/60" />
             What we believe
           </p>
-          <h2 className="mt-6 max-w-3xl text-[clamp(2rem,4.2vw,3.6rem)] font-extrabold leading-[1.02] tracking-[-0.035em]">
+          <h2 className="mt-5 max-w-3xl text-[clamp(2.2rem,4.5vw,3.8rem)] font-extrabold leading-[1.02] tracking-[-0.035em]">
             Four rules we don&apos;t break,{" "}
             <span className="serif-accent font-normal text-brand">even for big clients</span>.
           </h2>
-          <div className="mt-14 grid gap-5 sm:grid-cols-2">
+          <div className="mt-10 grid gap-5 sm:grid-cols-2">
             {VALUES.map((value, i) => (
               <Reveal key={value.title} delay={(i % 2) * 0.08} className="h-full">
-                <div className="group flex h-full flex-col rounded-[1.8rem] border border-border bg-card p-8 transition-all duration-500 hover:border-foreground/40 md:p-9">
+                <div className="group flex h-full flex-col rounded-[1.8rem] border border-border bg-card p-7 transition-all duration-500 hover:border-foreground/40 md:p-8">
                   <span className="serif-accent text-[2.4rem] leading-none text-brand">
                     0{i + 1}
                   </span>
-                  <h3 className="mt-5 text-[1.5rem] font-extrabold tracking-tight">
+                  <h3 className="mt-4 text-[1.4rem] font-extrabold tracking-tight">
                     {value.title}
                   </h3>
                   <p className="mt-3 leading-relaxed text-muted-foreground">{value.desc}</p>
@@ -140,20 +107,20 @@ export default function About() {
       </section>
 
       {/* ================= TIMELINE ================= */}
-      <section className="shell py-20 md:py-28">
-        <div className="grid gap-14 lg:grid-cols-[0.8fr_1.2fr]">
+      <section className="shell py-16 md:py-22">
+        <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="eyebrow flex items-center gap-3 text-brand">
               <span className="h-px w-8 bg-brand/60" />
               The story so far
             </p>
-            <h2 className="mt-6 text-[clamp(2rem,4.2vw,3.6rem)] font-extrabold leading-[1.02] tracking-[-0.035em]">
+            <h2 className="mt-5 text-[clamp(2.2rem,4.5vw,3.8rem)] font-extrabold leading-[1.02] tracking-[-0.035em]">
               Started this year,{" "}
               <span className="serif-accent font-normal text-brand">one standard</span>.
             </h2>
             <Reveal delay={0.15}>
-              <p className="mt-6 max-w-sm leading-relaxed text-muted-foreground">
-                No acquisition stories, no "growth hacking". Just a slow, deliberate
+              <p className="mt-5 max-w-sm leading-relaxed text-muted-foreground">
+                No acquisition stories, no &quot;growth hacking&quot;. Just a slow, deliberate
                 build of a studio that keeps its promises — and fills its clients&apos;
                 tables.
               </p>
@@ -163,7 +130,7 @@ export default function About() {
           <ol className="relative border-l border-border/80">
             {TIMELINE.map((item, i) => (
               <Reveal key={item.year} delay={i * 0.06} y={16}>
-                <li className="relative pb-12 pl-10 last:pb-0">
+                <li className="relative pb-10 pl-10 last:pb-0">
                   <span
                     className={cn(
                       "absolute -left-[5px] top-1.5 size-2.5 rounded-full ring-4 ring-background",
@@ -172,7 +139,7 @@ export default function About() {
                   />
                   <div className="flex flex-wrap items-baseline gap-x-4 gap-y-1">
                     <span className="serif-accent text-[1.6rem] text-brand">{item.year}</span>
-                    <h3 className="text-[1.35rem] font-extrabold tracking-tight">
+                    <h3 className="text-[1.3rem] font-extrabold tracking-tight">
                       {item.title}
                     </h3>
                   </div>
@@ -187,8 +154,8 @@ export default function About() {
       </section>
 
       {/* ================= STATS ================= */}
-      <section className="border-y border-border/70 bg-card/60 py-16 md:py-20">
-        <div className="shell grid grid-cols-2 gap-x-6 gap-y-12 lg:grid-cols-4">
+      <section className="border-y border-border/70 bg-card/60 py-14 md:py-18">
+        <div className="shell grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-4">
           {STATS.map((stat, i) => (
             <Reveal key={stat.label} delay={i * 0.07} className="text-center lg:text-left">
               <p className="text-[clamp(2.4rem,4.6vw,3.6rem)] font-extrabold leading-none tracking-[-0.03em]">
@@ -207,16 +174,16 @@ export default function About() {
       </section>
 
       {/* ================= TEAM ================= */}
-      <section className="shell py-20 md:py-28">
+      <section className="shell py-16 md:py-22">
         <p className="eyebrow flex items-center gap-3 text-brand">
           <span className="h-px w-8 bg-brand/60" />
           The humans
         </p>
-        <h2 className="mt-6 text-[clamp(2rem,4.2vw,3.6rem)] font-extrabold leading-[1.02] tracking-[-0.035em]">
+        <h2 className="mt-5 text-[clamp(2.2rem,4.5vw,3.8rem)] font-extrabold leading-[1.02] tracking-[-0.035em]">
           The people you&apos;ll{" "}
           <span className="serif-accent font-normal text-brand">actually talk to</span>.
         </h2>
-        <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {TEAM.map((member, i) => (
             <Reveal key={member.name} delay={i * 0.06} className="h-full">
               <div className="group flex h-full flex-col rounded-[1.8rem] border border-border bg-card p-7 transition-all duration-500 hover:-translate-y-1.5 hover:border-foreground/40">
@@ -228,7 +195,7 @@ export default function About() {
                 >
                   {member.initials}
                 </span>
-                <h3 className="mt-6 text-[1.2rem] font-extrabold tracking-tight">{member.name}</h3>
+                <h3 className="mt-5 text-[1.2rem] font-extrabold tracking-tight">{member.name}</h3>
                 <p className="mt-1 text-sm font-semibold text-brand">{member.role}</p>
               </div>
             </Reveal>

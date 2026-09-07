@@ -34,7 +34,6 @@ export function SiteFooter() {
             <ul className="mt-5 flex flex-col gap-2.5">
               {[
                 ["Home", "/"],
-                ["Work", "/work"],
                 ["Services", "/services"],
                 ["Pricing", "/pricing"],
                 ["Process", "/process"],

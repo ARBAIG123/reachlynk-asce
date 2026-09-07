@@ -76,7 +76,7 @@ export default function Services() {
       </section>
 
       {/* ================= SERVICE CARDS ================= */}
-      <section className="shell pb-20 md:pb-28">
+      <section className="shell pb-16 md:pb-22">
         <div className="grid gap-5 md:grid-cols-2">
           {SERVICES.map((service, i) => (
             <Reveal
@@ -131,7 +131,7 @@ export default function Services() {
       </section>
 
       {/* ================= NOT OUR THING ================= */}
-      <section className="bg-secondary/70 py-20 md:py-28">
+      <section className="bg-secondary/70 py-16 md:py-22">
         <div className="shell grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="eyebrow flex items-center gap-3 text-brand">
@@ -168,7 +168,7 @@ export default function Services() {
       </section>
 
       {/* ================= ENGAGEMENT MODELS ================= */}
-      <section className="shell py-20 md:py-28">
+      <section className="shell py-16 md:py-22">
         <p className="eyebrow flex items-center gap-3 text-brand">
           <span className="h-px w-8 bg-brand/60" />
           Ways to work with us
@@ -176,8 +176,7 @@ export default function Services() {
         <h2 className="mt-6 max-w-3xl text-[clamp(2rem,4.2vw,3.6rem)] font-extrabold leading-[1.02] tracking-[-0.035em]">
           Three ways in,{" "}
           <span className="serif-accent font-normal text-brand">one standard</span> of work.
-        </h2>
-        <div className="mt-14 grid gap-5 md:grid-cols-3">
+        </h2>          <div className="mt-10 grid gap-5 md:grid-cols-3">
           {MODELS.map((model, i) => (
             <Reveal key={model.title} delay={i * 0.08} className="h-full">
               <div className="group flex h-full flex-col rounded-[1.8rem] border border-border bg-card p-8 transition-all duration-500 hover:-translate-y-1.5 hover:border-foreground/40">

@@ -128,7 +128,7 @@ export default function Pricing() {
       </section>
 
       {/* ================= PLANS ================= */}
-      <section className="shell pb-8 pt-20 md:pt-28">
+      <section className="shell pb-8 pt-16 md:pt-22">
         <div className="grid gap-14 sm:gap-10 lg:grid-cols-3 lg:items-stretch lg:gap-6 lg:pt-8">
           {PLANS.map((plan, i) => (
             <Reveal key={plan.name} delay={i * 0.12} className="h-full" y={34}>
@@ -180,7 +180,7 @@ export default function Pricing() {
       </section>
 
       {/* ================= FAQ ================= */}
-      <section className="shell py-16 md:py-24">
+      <section className="shell py-14 md:py-18">
         <div className="mx-auto max-w-3xl">
           <div className="text-center">
             <p className="eyebrow text-brand">Questions</p>
