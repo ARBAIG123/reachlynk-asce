@@ -105,7 +105,7 @@ export default function Pricing() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="pb-4 pt-28 md:pt-36">
+      <section className="pb-4 pt-20 md:pt-28">
         <div className="shell text-center">
           <p className="eyebrow inline-flex items-center gap-3 text-brand">
             <span className="h-px w-8 bg-brand/60" />

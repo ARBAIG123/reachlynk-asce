@@ -76,7 +76,7 @@ export default function Contact() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="pb-6 pt-28 md:pt-36">
+      <section className="pb-6 pt-20 md:pt-28">
         <div className="shell">
           <p className="eyebrow flex items-center gap-3 text-brand">
             <span className="h-px w-8 bg-brand/60" />
@@ -206,7 +206,7 @@ export default function Contact() {
                 </li>
                 <li className="flex items-center gap-3">
                   <MapPin className="size-4 text-brand" />
-                  Amsterdam · Portland · everywhere
+                  Hyderabad, India · everywhere
                 </li>
               </ul>
             </div>

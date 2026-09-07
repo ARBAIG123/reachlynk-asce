@@ -16,7 +16,7 @@ export default function Process() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="pb-8 pt-28 md:pb-12 md:pt-36">
+      <section className="pb-6 pt-20 md:pb-10 md:pt-28">
         <div className="shell">
           <p className="eyebrow flex items-center gap-3 text-brand">
             <span className="h-px w-8 bg-brand/60" />

@@ -29,7 +29,7 @@ export default function Landing() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="relative overflow-hidden pb-6 pt-20 md:pb-12 md:pt-28">
+      <section className="relative overflow-hidden pb-4 pt-16 md:pb-10 md:pt-24">
         {/* Slow-moving Reachlynk background text */}
         <VelocityWord
           strength={0.4}

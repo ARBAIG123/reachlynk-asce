@@ -104,10 +104,11 @@ export function SiteFooter() {
           <p className="text-[0.68rem] font-bold uppercase tracking-[0.2em] text-muted-foreground/60">
             We build digital experiences
           </p>
-          <p className="text-[0.78rem] font-medium text-muted-foreground/60">
-            © {new Date().getFullYear()} Reachlynk. Made with care — clean, fast,
-            human.
-          </p>
+          <div className="flex items-center gap-4 text-[0.78rem] font-medium text-muted-foreground/60">
+            <span>© {new Date().getFullYear()} Reachlynk. Made with care — clean, fast, human.</span>
+            <span className="hidden sm:inline">·</span>
+            <Link to="/terms" className="transition-colors hover:text-foreground">Terms of Service</Link>
+          </div>
         </div>
       </div>
     </footer>

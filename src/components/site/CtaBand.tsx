@@ -66,10 +66,28 @@ export function CtaBand() {
               </div>
             </div>
 
-            {/* Right — features */}
-            <div className="flex flex-col justify-center gap-7 border-t border-border/60 px-8 py-8 md:border-l md:border-t-0 md:px-10 md:py-12">
+            {/* Right — features + decorative flower */}
+            <div className="relative flex flex-col justify-center gap-7 border-t border-border/60 px-8 py-8 md:border-l md:border-t-0 md:px-10 md:py-12">
+              {/* Decorative flower SVG */}
+              <svg
+                className="pointer-events-none absolute -right-6 -top-6 h-48 w-48 opacity-15 sm:h-64 sm:w-64 sm:opacity-20"
+                viewBox="0 0 200 200"
+                fill="none"
+                aria-hidden
+              >
+                <g className="text-brand">
+                  <path d="M100 30 Q130 60 120 100 Q130 140 100 170 Q70 140 80 100 Q70 60 100 30Z" fill="currentColor" fillOpacity="0.25" />
+                  <path d="M150 60 Q130 80 110 100 Q130 120 150 140 Q170 120 160 100 Q170 80 150 60Z" fill="currentColor" fillOpacity="0.15" />
+                  <path d="M50 60 Q70 80 90 100 Q70 120 50 140 Q30 120 40 100 Q30 80 50 60Z" fill="currentColor" fillOpacity="0.15" />
+                  <circle cx="100" cy="100" r="5" fill="currentColor" fillOpacity="0.4" />
+                  {/* Decorative curved line with star */}
+                  <path d="M160 160 Q140 140 130 110" stroke="currentColor" strokeWidth="1" strokeOpacity="0.3" fill="none" />
+                  <path d="M128 108 L132 104 L136 108 L132 112Z" fill="currentColor" fillOpacity="0.4" />
+                </g>
+              </svg>
+
               {FEATURES.map((feature) => (
-                <div key={feature.title} className="flex items-start gap-4">
+                <div key={feature.title} className="relative flex items-start gap-4">
                   <span className="mt-0.5 flex size-9 shrink-0 items-center justify-center rounded-full border border-brand/20 text-brand">
                     <feature.icon className="size-4" />
                   </span>

@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="pb-8 pt-28 md:pb-12 md:pt-36">
+      <section className="pb-6 pt-20 md:pb-10 md:pt-28">
         <div className="shell grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <p className="eyebrow flex items-center gap-3 text-brand">
