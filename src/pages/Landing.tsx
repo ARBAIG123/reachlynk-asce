@@ -29,7 +29,7 @@ export default function Landing() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="relative overflow-hidden pb-8 pt-24 md:pb-14 md:pt-32">
+      <section className="relative overflow-hidden pb-6 pt-20 md:pb-12 md:pt-28">
         {/* Slow-moving Reachlynk background text */}
         <VelocityWord
           strength={0.4}
@@ -49,13 +49,13 @@ export default function Landing() {
             {/* copy */}
             <div className="relative z-10">
               <Reveal y={14}>
-                <p className="inline-flex items-center gap-2.5 rounded-full border border-border bg-card/70 px-4 py-2 text-[0.85rem] font-bold text-foreground">
+                <p className="inline-flex items-center gap-2.5 rounded-full border border-border bg-card/70 px-4 py-1.5 text-[0.82rem] font-bold text-foreground">
                   <span className="size-2 rounded-full bg-brand" />
                   Modern websites that help businesses grow
                 </p>
               </Reveal>
 
-              <h1 className="mt-7 text-[clamp(3rem,7.5vw,6.5rem)] font-extrabold leading-[0.97] tracking-[-0.04em] text-foreground">
+              <h1 className="mt-5 text-[clamp(2.8rem,7vw,6rem)] font-extrabold leading-[0.97] tracking-[-0.04em] text-foreground">
                 <MaskLine>Websites that help</MaskLine>
                 <MaskLine delay={0.09}>
                   businesses{" "}
