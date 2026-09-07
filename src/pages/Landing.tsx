@@ -83,7 +83,7 @@ export default function Landing() {
                 </p>
               </Reveal>
 
-              <h1 className="mt-6 text-[clamp(2.6rem,6.5vw,5.2rem)] font-extrabold leading-[1.02] tracking-[-0.035em] text-foreground">
+              <h1 className="mt-6 text-[clamp(3rem,7.5vw,6.2rem)] font-extrabold leading-[0.97] tracking-[-0.04em] text-foreground">
                 <MaskLine>Websites that make</MaskLine>
                 <MaskLine delay={0.08}>
                   businesses{" "}
@@ -93,10 +93,11 @@ export default function Landing() {
               </h1>
 
               <Reveal delay={0.3} y={20}>
-                <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground md:text-xl">
-                  We design and build modern websites for restaurants, cafés,
-                  hotels and local businesses that want to grow online — and get
-                  noticed.
+                <p className="mt-7 max-w-xl text-[1.15rem] leading-relaxed text-muted-foreground md:text-[1.3rem]">
+                  We craft modern, high-performance websites that turn visitors
+                  into customers. Clean design, fast loading, real results — built
+                  for restaurants, cafés, hotels and local businesses that refuse
+                  to blend in.
                 </p>
               </Reveal>
 
@@ -106,7 +107,7 @@ export default function Landing() {
                     to="/contact?mode=project"
                     className={cn(
                       buttonVariants({ variant: "default" }),
-                      "group h-[56px] gap-2.5 rounded-full px-8 text-[0.98rem] font-bold",
+                      "group h-[64px] gap-3 rounded-full px-10 text-lg font-bold",
                     )}
                   >
                     Start a project
@@ -116,7 +117,7 @@ export default function Landing() {
                     to="/contact?mode=audit"
                     className={cn(
                       buttonVariants({ variant: "outline" }),
-                      "h-[56px] rounded-full border-foreground/25 bg-transparent px-8 text-[0.98rem] font-bold",
+                      "h-[64px] rounded-full border-foreground/25 bg-transparent px-10 text-lg font-bold",
                     )}
                   >
                     Get a free web audit
