@@ -11,7 +11,7 @@ export const SITE = {
 };
 
 export const NAV_LINKS = [
-  { label: "Services", to: "/services" },
+  { label: "Team", to: "/team" },
   { label: "Pricing", to: "/pricing" },
   { label: "About", to: "/about" },
   { label: "Process", to: "/process" },
@@ -536,8 +536,44 @@ export const TIMELINE = [
   },
 ];
 
-export const TEAM = [
-  { initials: "RL", name: "The Reachlynk Team", role: "Design, development & strategy" },
+export interface TeamMember {
+  initials: string;
+  name: string;
+  role: string;
+  socials: {
+    platform: string;
+    url: string;
+  }[];
+}
+
+export const TEAM: TeamMember[] = [
+  {
+    initials: "AR",
+    name: "Alex Rivera",
+    role: "Creative Director",
+    socials: [
+      { platform: "linkedin", url: "https://linkedin.com" },
+      { platform: "instagram", url: "https://instagram.com" },
+    ],
+  },
+  {
+    initials: "SM",
+    name: "Sara Mitchell",
+    role: "Lead Developer",
+    socials: [
+      { platform: "linkedin", url: "https://linkedin.com" },
+      { platform: "github", url: "https://github.com" },
+    ],
+  },
+  {
+    initials: "JD",
+    name: "James Donovan",
+    role: "Strategy & Operations",
+    socials: [
+      { platform: "linkedin", url: "https://linkedin.com" },
+      { platform: "instagram", url: "https://instagram.com" },
+    ],
+  },
 ];
 
 export const BUDGETS = [

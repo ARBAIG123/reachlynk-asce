@@ -34,7 +34,7 @@ export function SiteFooter() {
             <ul className="mt-5 flex flex-col gap-2.5">
               {[
                 ["Home", "/"],
-                ["Services", "/services"],
+                ["Team", "/team"],
                 ["Pricing", "/pricing"],
                 ["Process", "/process"],
                 ["About", "/about"],
@@ -52,27 +52,7 @@ export function SiteFooter() {
             </ul>
           </div>
 
-          <div>
-            <h3 className="eyebrow text-muted-foreground">Services</h3>
-            <ul className="mt-5 flex flex-col gap-2.5">
-              {[
-                "Restaurant & café websites",
-                "Hotels & direct booking",
-                "Local business redesigns",
-                "Brand & identity",
-                "Care plans",
-              ].map((label) => (
-                <li key={label}>
-                  <Link
-                    to="/services"
-                    className="text-sm font-medium text-foreground/75 transition-colors hover:text-foreground"
-                  >
-                    {label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+
 
           <div>
             <h3 className="eyebrow text-muted-foreground">Elsewhere</h3>

@@ -1,7 +1,7 @@
 import { ClipReveal, CountUp, MaskLine, Reveal, VelocityWord } from "@/components/site/motion";
 import { BrowserMock } from "@/components/site/SiteMock";
 import { cn } from "@/lib/utils";
-import { PROJECTS, STATS, TEAM, TIMELINE, VALUES } from "@/lib/content";
+import { PROJECTS, STATS, TIMELINE, VALUES } from "@/lib/content";
 
 export default function About() {
   return (
@@ -168,36 +168,6 @@ export default function About() {
               <p className="mx-auto mt-2.5 max-w-[12rem] text-xs font-semibold leading-snug text-muted-foreground lg:mx-0">
                 {stat.label}
               </p>
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      {/* ================= TEAM ================= */}
-      <section className="shell py-16 md:py-22">
-        <p className="eyebrow flex items-center gap-3 text-brand">
-          <span className="h-px w-8 bg-brand/60" />
-          The humans
-        </p>
-        <h2 className="mt-5 text-[clamp(2.2rem,4.5vw,3.8rem)] font-extrabold leading-[1.02] tracking-[-0.035em]">
-          The people you&apos;ll{" "}
-          <span className="serif-accent font-normal text-brand">actually talk to</span>.
-        </h2>
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {TEAM.map((member, i) => (
-            <Reveal key={member.name} delay={i * 0.06} className="h-full">
-              <div className="group flex h-full flex-col rounded-[1.8rem] border border-border bg-card p-7 transition-all duration-500 hover:-translate-y-1.5 hover:border-foreground/40">
-                <span
-                  className={cn(
-                    "flex size-20 items-center justify-center rounded-2xl text-[1.7rem] font-extrabold text-background transition-transform duration-500 group-hover:rotate-6",
-                    ["bg-foreground", "bg-brand", "bg-muted-foreground", "bg-foreground/70"][i % 4],
-                  )}
-                >
-                  {member.initials}
-                </span>
-                <h3 className="mt-5 text-[1.2rem] font-extrabold tracking-tight">{member.name}</h3>
-                <p className="mt-1 text-sm font-semibold text-brand">{member.role}</p>
-              </div>
             </Reveal>
           ))}
         </div>

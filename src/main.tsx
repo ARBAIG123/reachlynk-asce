@@ -11,7 +11,7 @@ import "./index.css";
 
 // Lazy load route components for better code splitting
 const Landing = lazy(() => import("./pages/Landing.tsx"));
-const Services = lazy(() => import("./pages/Services.tsx"));
+const Team = lazy(() => import("./pages/Team.tsx"));
 
 const Pricing = lazy(() => import("./pages/Pricing.tsx"));
 const About = lazy(() => import("./pages/About.tsx"));
@@ -136,10 +136,10 @@ createRoot(document.getElementById("root")!).render(
                 }
               />
               <Route
-                path="/services"
+                path="/team"
                 element={
                   <SiteLayout>
-                    <Services />
+                    <Team />
                   </SiteLayout>
                 }
               />

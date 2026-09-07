@@ -4,7 +4,6 @@ import { BrowserMock } from "@/components/site/SiteMock";
 import {
   ClipReveal,
   CountUp,
-  HorizontalScroll,
   Marquee,
   MaskLine,
   Parallax,
@@ -12,7 +11,7 @@ import {
   VelocityWord,
 } from "@/components/site/motion";
 import { cn } from "@/lib/utils";
-import { CLIENT_MARQUEE, PROCESS, PROJECTS, SERVICES, STATS } from "@/lib/content";
+import { CLIENT_MARQUEE, PROCESS, PROJECTS, STATS } from "@/lib/content";
 import { buttonVariants } from "@/components/ui/button";
 
 function SectionEyebrow({ children }: { children: React.ReactNode }) {
@@ -136,60 +135,6 @@ export default function Landing() {
             </span>
           ))}
         </Marquee>
-      </section>
-
-      {/* ================= SERVICES ================= */}
-      <section className="shell py-16 md:py-22">
-        <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr] lg:items-end">
-          <div>
-            <SectionEyebrow>What we do</SectionEyebrow>
-            <h2 className="mt-5 text-[clamp(2.4rem,5vw,4.2rem)] font-extrabold leading-[1.02] tracking-[-0.035em]">
-              <MaskLine>Everything a website</MaskLine>
-              <MaskLine delay={0.08}>
-                needs to{" "}
-                <span className="serif-accent font-normal text-brand">earn its keep</span>.
-              </MaskLine>
-            </h2>
-          </div>
-          <Reveal delay={0.15}>
-            <p className="max-w-md leading-relaxed text-muted-foreground lg:justify-self-end">
-              One small team from strategy to launch — design, code, words and care.
-              No hand-offs to strangers, no scope creep, no 40-page decks.
-            </p>
-            <Link
-              to="/services"
-              className="mt-4 inline-flex items-center gap-2 font-bold text-foreground underline decoration-brand/60 decoration-2 underline-offset-8 transition-colors hover:decoration-brand"
-            >
-              Explore all services <ArrowRight className="size-4" />
-            </Link>
-          </Reveal>
-        </div>
-
-        <div className="mt-10 border-t border-border/80">
-          {SERVICES.map((service, i) => (
-            <Reveal key={service.num} delay={i * 0.05} y={18}>
-              <Link
-                to="/services"
-                className="group grid grid-cols-[2.6rem_1fr_auto] items-baseline gap-x-4 gap-y-1 border-b border-border/80 py-5 transition-colors duration-300 hover:bg-secondary/60 md:grid-cols-[4rem_1fr_auto] md:gap-x-8 md:py-7 md:px-4"
-              >
-                <span className="eyebrow text-muted-foreground transition-colors group-hover:text-brand">
-                  {service.num}
-                </span>
-                <span className="flex flex-col gap-1.5">
-                  <span className="text-[clamp(1.5rem,3vw,2.5rem)] font-extrabold tracking-[-0.02em] text-foreground transition-transform duration-500 group-hover:translate-x-1">
-                    {service.title}
-                  </span>
-                  <span className="hidden max-w-2xl text-[0.95rem] leading-relaxed text-muted-foreground md:block">
-                    {service.description}
-                  </span>
-                </span>
-                <span className="flex size-11 items-center justify-center rounded-full border border-border bg-card text-foreground transition-all duration-500 group-hover:rotate-45 group-hover:border-foreground group-hover:bg-foreground group-hover:text-background">
-                  <ArrowUpRight className="size-5" />
-                </span>
-              </Link>
-            </Reveal>
-          ))}
-        </div>
       </section>
 
       {/* ================= STATS + PROOF ================= */}
