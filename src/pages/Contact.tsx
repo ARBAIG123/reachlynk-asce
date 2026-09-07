@@ -76,7 +76,7 @@ export default function Contact() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="pb-6 pt-20 md:pt-28">
+      <section className="pb-6 pt-14 md:pt-20">
         <div className="shell">
           <p className="eyebrow flex items-center gap-3 text-brand">
             <span className="h-px w-8 bg-brand/60" />
@@ -112,7 +112,7 @@ export default function Contact() {
       </section>
 
       {/* ================= FORM + RAIL ================= */}
-      <section className="shell pb-10 md:pb-14">
+      <section className="shell pb-6 md:pb-10">
         <div className="grid gap-10 lg:grid-cols-[1.35fr_0.65fr]">
           <Reveal delay={0.15}>
             <ProjectInquiryForm mode={mode} />

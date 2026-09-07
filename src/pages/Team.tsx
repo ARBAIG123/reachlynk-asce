@@ -112,7 +112,7 @@ export default function Team() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="pb-6 pt-20 md:pb-10 md:pt-28">
+      <section className="pb-6 pt-14 md:pb-10 md:pt-20">
         <div className="shell">
           <p className="eyebrow flex items-center gap-3 text-brand">
             <span className="h-px w-8 bg-brand/60" />

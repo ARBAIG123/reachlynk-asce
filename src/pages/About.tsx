@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="pb-6 pt-20 md:pb-10 md:pt-28">
+      <section className="pb-6 pt-14 md:pb-10 md:pt-20">
         <div className="shell grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <p className="eyebrow flex items-center gap-3 text-brand">
@@ -48,7 +48,7 @@ export default function About() {
       </section>
 
       {/* ================= STORY ================= */}
-      <section className="shell py-10 md:py-14">
+      <section className="shell py-6 md:py-10">
         <div className="mx-auto max-w-3xl">
           <Reveal>
             <p className="serif-accent text-[clamp(1.7rem,3.4vw,2.7rem)] leading-snug text-foreground">
@@ -78,7 +78,7 @@ export default function About() {
       </section>
 
       {/* ================= VALUES ================= */}
-      <section className="bg-secondary/70 py-12 md:py-16">
+      <section className="bg-secondary/70 py-8 md:py-12">
         <div className="shell">
           <p className="eyebrow flex items-center gap-3 text-brand">
             <span className="h-px w-8 bg-brand/60" />
@@ -107,7 +107,7 @@ export default function About() {
       </section>
 
       {/* ================= TIMELINE ================= */}
-      <section className="shell py-12 md:py-16">
+      <section className="shell py-8 md:py-12">
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="eyebrow flex items-center gap-3 text-brand">
@@ -154,7 +154,7 @@ export default function About() {
       </section>
 
       {/* ================= STATS ================= */}
-      <section className="border-y border-border/70 bg-card/60 py-14 md:py-18">
+      <section className="border-y border-border/70 bg-card/60 py-10 md:py-14">
         <div className="shell grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-4">
           {STATS.map((stat, i) => (
             <Reveal key={stat.label} delay={i * 0.07} className="text-center lg:text-left">

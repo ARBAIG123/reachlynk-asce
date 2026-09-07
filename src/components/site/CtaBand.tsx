@@ -25,7 +25,7 @@ const FEATURES = [
 
 export function CtaBand() {
   return (
-    <section className="shell pb-8 pt-4 md:pb-12">
+    <section className="shell pb-6 pt-2 md:pb-10">
       <Reveal>
         <div className="relative overflow-hidden rounded-[2rem] border border-border/80 bg-secondary md:rounded-[2.5rem]">
           <div className="grid gap-0 md:grid-cols-[1.2fr_0.8fr]">
