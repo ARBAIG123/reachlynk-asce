@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" fill="none">
-  <!-- "r" in dark brown -->
-  <path d="M12 12 L12 40" stroke="#3D2213" stroke-width="7" stroke-linecap="round"/>
-  <path d="M12 12 L12 26 Q12 20 18 18 Q24 16 28 20" stroke="#3D2213" stroke-width="7" stroke-linecap="round" fill="none"/>
-  <!-- Vertical bar (part of the "l") in terracotta -->
-  <rect x="28" y="10" width="7" height="22" rx="2" fill="#C0533A"/>
-  <!-- Arrow pointing right in terracotta -->
-  <path d="M14 34 L34 34" stroke="#C0533A" stroke-width="7" stroke-linecap="round"/>
-  <path d="M28 26 L40 34 L28 42" stroke="#C0533A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <!-- lowercase r with terracotta arrow extending right -->
+  <!-- r vertical stem -->
+  <path d="M10 10 L10 38" stroke="#3D2213" stroke-width="6.5" stroke-linecap="round"/>
+  <!-- r bowl -->
+  <path d="M10 10 L10 24 Q10 18 16 16 Q22 14 26 18" stroke="#3D2213" stroke-width="6.5" stroke-linecap="round" fill="none"/>
+  <!-- arrow horizontal line -->
+  <path d="M14 32 L36 32" stroke="#C0533A" stroke-width="6" stroke-linecap="round"/>
+  <!-- arrow head -->
+  <path d="M30 24 L40 32 L30 40" stroke="#C0533A" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
 </svg>

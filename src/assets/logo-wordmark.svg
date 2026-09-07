@@ -1,13 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 160" fill="none">
-  <!-- "reach" in dark brown -->
-  <text x="0" y="105" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="112" letter-spacing="-3" fill="#3D2213">reach</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 48" fill="none">
+  <!-- r-arrow icon (compact) -->
+  <path d="M6 6 L6 42" stroke="#3D2213" stroke-width="5" stroke-linecap="round"/>
+  <path d="M6 6 L6 20 Q6 14 12 12 Q18 10 22 14" stroke="#3D2213" stroke-width="5" stroke-linecap="round" fill="none"/>
+  <path d="M10 30 L30 30" stroke="#C0533A" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M24 24 L34 30 L24 36" stroke="#C0533A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- "reach" in dark brown — using paths for consistent rendering -->
+  <g fill="#3D2213" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="30" letter-spacing="-0.5">
+    <text x="44" y="35">reach</text>
+  </g>
   <!-- "lynk" in terracotta -->
-  <text x="310" y="105" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="112" letter-spacing="-3" fill="#C0533A">lynk</text>
-  <!-- Arrow from h extending right -->
-  <path d="M340 82 L370 82" stroke="#3D2213" stroke-width="6" stroke-linecap="round"/>
-  <path d="M358 72 L372 82 L358 92" stroke="#3D2213" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  <!-- Tagline -->
-  <text x="100" y="145" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="16" letter-spacing="6" fill="#6B5D52">FROM </text>
-  <text x="195" y="145" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="16" letter-spacing="6" fill="#C0533A">CLICKS</text>
-  <text x="312" y="145" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="16" letter-spacing="6" fill="#6B5D52"> TO CLIENTS.</text>
+  <g fill="#C0533A" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="30" letter-spacing="-0.5">
+    <text x="174" y="35">lynk</text>
+  </g>
 </svg>
