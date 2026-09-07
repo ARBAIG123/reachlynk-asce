@@ -4,7 +4,7 @@ import { RequireAuth } from "@/components/RequireAuth";
 import { VlyToolbar } from "../vly-toolbar-readonly.tsx";
 import { ConvexAuthProvider } from "@convex-dev/auth/react";
 import { ConvexReactClient } from "convex/react";
-import React, { StrictMode, useEffect, lazy, Suspense } from "react";
+import React, { StrictMode, useEffect, useRef, useState, lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Route, Routes, useLocation } from "react-router";
 import "./index.css";
@@ -24,56 +24,110 @@ const Terms = lazy(() => import("./pages/Terms.tsx"));
 const SiteLayout = lazy(() => import("./components/site/SiteLayout.tsx"));
 
 // Simple loading fallback for route transitions
+
+
 function RouteLoading() {
+  const [pct, setPct] = useState(0);
+  const rafRef = useRef(0);
+  const startRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    const totalMs = 3200; // full fill duration
+    const step = (ts: number) => {
+      if (startRef.current === null) startRef.current = ts;
+      const elapsed = ts - startRef.current;
+      // ease-out-cubic for a natural fill
+      const raw = Math.min(elapsed / totalMs, 1);
+      const eased = 1 - Math.pow(1 - raw, 3);
+      setPct(Math.round(eased * 100));
+      if (raw < 1) rafRef.current = requestAnimationFrame(step);
+    };
+    rafRef.current = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(rafRef.current);
+  }, []);
+
+  // wave path — animated via CSS
+  const fillY = 100 - (pct / 100) * 100; // 100 = empty, 0 = full (in viewBox %)
+
   return (
     <div className="flex min-h-screen flex-col items-center justify-center bg-background">
-      {/* Logo mark */}
-      <div className="relative mb-6">
-        <svg
-          className="size-14 animate-spin-slower opacity-20"
-          viewBox="0 0 200 200"
-          fill="none"
-          aria-hidden
-        >
-          <path
-            d="M100 30 Q130 60 120 100 Q130 140 100 170 Q70 140 80 100 Q70 60 100 30Z"
-            className="fill-brand/30"
-          />
-          <path
-            d="M150 60 Q130 80 110 100 Q130 120 150 140 Q170 120 160 100 Q170 80 150 60Z"
-            className="fill-brand/20"
-          />
-          <path
-            d="M50 60 Q70 80 90 100 Q70 120 50 140 Q30 120 40 100 Q30 80 50 60Z"
-            className="fill-brand/20"
-          />
-        </svg>
-        <span className="absolute inset-0 flex items-center justify-center">
-          <span className="size-2.5 rounded-full bg-brand/70" />
-        </span>
-      </div>
-      {/* Brand name */}
-      <p className="text-sm font-extrabold uppercase tracking-[0.25em] text-foreground/40">
-        Reachlynk
-      </p>
-      {/* Animated dots */}
-      <div className="mt-4 flex items-center gap-1.5">
-        {[0, 1, 2].map((i) => (
-          <span
-            key={i}
-            className="size-1 rounded-full bg-brand/50"
-            style={{
-              animation: `rl-dot-pulse 1.4s ease-in-out ${i * 0.2}s infinite`,
-            }}
-          />
-        ))}
-      </div>
       <style>{`
-        @keyframes rl-dot-pulse {
-          0%, 80%, 100% { opacity: 0.3; transform: scale(0.8); }
-          40% { opacity: 1; transform: scale(1.2); }
+        @keyframes rl-wave {
+          0%, 100% { d: path("M0 12 Q25 8 50 12 Q75 16 100 12 L100 100 L0 100Z"); }
+          50% { d: path("M0 12 Q25 16 50 12 Q75 8 100 12 L100 100 L0 100Z"); }
+        }
+        @keyframes rl-fill-label {
+          0%, 100% { opacity: 0.6; }
+          50% { opacity: 1; }
         }
       `}</style>
+
+      {/* ---- Main text with water fill ---- */}
+      <div className="relative select-none">
+        {/* Base text (outline / unfilled) */}
+        <h1
+          className="text-[clamp(4rem,12vw,10rem)] font-extrabold uppercase tracking-[-0.03em] text-foreground/[0.08]"
+          aria-hidden
+        >
+          Reachlynk
+        </h1>
+
+        {/* Fill overlay — clipped by percentage */}
+        <h1
+          className="absolute inset-0 text-[clamp(4rem,12vw,10rem)] font-extrabold uppercase tracking-[-0.03em]"
+          style={{
+            clipPath: `inset(${100 - pct}% 0 0 0)`,
+          }}
+        >
+          {/* Text color fill */}
+          <span className="text-foreground">Reachlynk</span>
+          {/* Water surface wave at the fill line */}
+          {pct > 2 && pct < 98 && (
+            <svg
+              className="absolute left-0 w-full"
+              style={{
+                bottom: `${pct}%`,
+                height: "12px",
+                transform: "translateY(50%)",
+              }}
+              viewBox="0 0 100 20"
+              preserveAspectRatio="none"
+              aria-hidden
+            >
+              <path
+                d="M0 12 Q25 8 50 12 Q75 16 100 12 L100 20 L0 20Z"
+                className="fill-brand/30"
+                style={{ animation: "rl-wave 2.5s ease-in-out infinite" }}
+              />
+            </svg>
+          )}
+        </h1>
+      </div>
+
+      {/* ---- Percentage counter ---- */}
+      <div className="mt-8 flex items-center gap-4">
+        <div className="h-px w-12 bg-foreground/15" />
+        <span
+          className="text-sm font-bold tabular-nums text-muted-foreground"
+          style={{ animation: "rl-fill-label 2s ease-in-out infinite" }}
+        >
+          {String(pct).padStart(3, "0")}%
+        </span>
+        <div className="h-px w-12 bg-foreground/15" />
+      </div>
+
+      {/* ---- Thin progress bar ---- */}
+      <div className="mt-4 h-[2px] w-48 overflow-hidden rounded-full bg-foreground/10">
+        <div
+          className="h-full rounded-full bg-brand transition-none"
+          style={{ width: `${pct}%` }}
+        />
+      </div>
+
+      {/* ---- Tagline ---- */}
+      <p className="mt-6 text-[0.7rem] font-bold uppercase tracking-[0.22em] text-muted-foreground/50">
+        From clicks to clients
+      </p>
     </div>
   );
 }
