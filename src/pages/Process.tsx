@@ -16,7 +16,7 @@ export default function Process() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="pb-12 pt-36 md:pb-16 md:pt-44">
+      <section className="pb-8 pt-28 md:pb-12 md:pt-36">
         <div className="shell">
           <p className="eyebrow flex items-center gap-3 text-brand">
             <span className="h-px w-8 bg-brand/60" />
@@ -39,7 +39,7 @@ export default function Process() {
       </section>
 
       {/* ================= STEPS ================= */}
-      <section className="shell pb-16 md:pb-22">
+      <section className="shell pb-12 md:pb-16">
         <div className="grid gap-12 lg:grid-cols-[0.72fr_1.28fr]">
           {/* sticky rail */}
           <div className="lg:sticky lg:top-28 lg:self-start">
@@ -152,7 +152,7 @@ export default function Process() {
       </section>
 
       {/* ================= GUARANTEES ================= */}
-      <section className="border-t border-border/70 bg-card/60 py-16 md:py-22">
+      <section className="border-t border-border/70 bg-card/60 py-12 md:py-16">
         <div className="shell grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
           <div>
             <p className="eyebrow flex items-center gap-3 text-brand">

@@ -313,7 +313,7 @@ export interface Plan {
 export const PLANS: Plan[] = [
   {
     name: "Starter",
-    price: "$1,900",
+    price: "₹30,000",
     cadence: "one-time",
     tagline: "A polished single page that gets you online properly.",
     features: [
@@ -330,7 +330,7 @@ export const PLANS: Plan[] = [
   },
   {
     name: "Business",
-    price: "$4,900",
+    price: "₹80,000",
     cadence: "one-time",
     tagline: "A full website built to turn visitors into regulars.",
     features: [
@@ -346,25 +346,6 @@ export const PLANS: Plan[] = [
     icon: "star",
     popular: true,
     note: "The sweet spot for growing venues.",
-  },
-  {
-    name: "Premium",
-    price: "$9,900",
-    cadence: "one-time",
-    tagline: "Design, development and strategy with nothing left out.",
-    features: [
-      "Everything in Business",
-      "Unlimited pages & advanced layouts",
-      "Reservations, ordering or booking engine",
-      "Custom motion & interactions",
-      "Brand refinement included",
-      "6 weeks to launch",
-      "60 days of post-launch support",
-      "Quarterly performance review",
-    ],
-    icon: "crown",
-    popular: false,
-    note: "For venues that want it unforgettable.",
   },
 ];
 
@@ -552,27 +533,25 @@ export const TEAM: TeamMember[] = [
     name: "Mohammed Abdur Rehman Baig",
     role: "Founder & Lead Developer",
     socials: [
-      { platform: "linkedin", url: "https://linkedin.com" },
-      { platform: "github", url: "https://github.com" },
-      { platform: "instagram", url: "https://instagram.com" },
+      { platform: "linkedin", url: "https://www.linkedin.com/in/mohammed-abdur-rehman-baig-a114053a1/" },
+      { platform: "github", url: "https://github.com/ARBAIG123" },
     ],
   },
   {
-    initials: "SM",
-    name: "Sara Mitchell",
-    role: "Lead Developer",
+    initials: "KH",
+    name: "Kamera Harshith",
+    role: "Co-Founder & Growth – Marketing Lead",
     socials: [
-      { platform: "linkedin", url: "https://linkedin.com" },
-      { platform: "github", url: "https://github.com" },
+      { platform: "linkedin", url: "https://www.linkedin.com/in/kamera-harshith-1b2931376/" },
+      { platform: "github", url: "https://github.com/kameraharshith2007-max" },
     ],
   },
   {
-    initials: "JD",
-    name: "James Donovan",
-    role: "Strategy & Operations",
+    initials: "BK",
+    name: "Tandra Bharath Kumar",
+    role: "Co-Founder & Creative Director",
     socials: [
-      { platform: "linkedin", url: "https://linkedin.com" },
-      { platform: "instagram", url: "https://instagram.com" },
+      { platform: "linkedin", url: "https://www.linkedin.com/in/bharath-tandra-5548363b4/" },
     ],
   },
 ];

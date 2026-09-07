@@ -105,7 +105,7 @@ export default function Pricing() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="pb-6 pt-36 md:pt-44">
+      <section className="pb-4 pt-28 md:pt-36">
         <div className="shell text-center">
           <p className="eyebrow inline-flex items-center gap-3 text-brand">
             <span className="h-px w-8 bg-brand/60" />
@@ -128,10 +128,9 @@ export default function Pricing() {
       </section>
 
       {/* ================= PLANS ================= */}
-      <section className="shell pb-8 pt-16 md:pt-22">
-        <div className="grid gap-14 sm:gap-10 lg:grid-cols-3 lg:items-stretch lg:gap-6 lg:pt-8">
-          {PLANS.map((plan, i) => (
-            <Reveal key={plan.name} delay={i * 0.12} className="h-full" y={34}>
+      <section className="shell pb-6 pt-12 md:pt-16">
+        <div className="mx-auto grid max-w-4xl gap-10 sm:gap-8 lg:grid-cols-2 lg:items-stretch lg:gap-6 lg:pt-8">            {PLANS.map((plan, i) => (
+              <Reveal key={plan.name} delay={i * 0.15} className="h-full" y={28}>
               <PlanCard plan={plan} index={i} />
             </Reveal>
           ))}

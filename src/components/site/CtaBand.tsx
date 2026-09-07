@@ -6,9 +6,9 @@ import { buttonVariants } from "@/components/ui/button";
 
 export function CtaBand() {
   return (
-    <section className="shell pb-12 pt-6 md:pb-16">
+    <section className="shell pb-8 pt-4 md:pb-12">
       <Reveal>
-        <div className="relative overflow-hidden rounded-[2rem] border border-border/80 bg-secondary px-6 py-12 sm:px-12 md:rounded-[2.5rem] md:px-16 md:py-18">
+        <div className="relative overflow-hidden rounded-[2rem] border border-border/80 bg-secondary px-6 py-10 sm:px-12 md:rounded-[2.5rem] md:px-16 md:py-14">
           {/* subtle oversized asterisk */}
           <span
             aria-hidden

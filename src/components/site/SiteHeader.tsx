@@ -33,7 +33,7 @@ export function SiteHeader() {
             : "border-b border-transparent bg-transparent",
         )}
       >
-        <div className="shell flex h-[68px] items-center justify-between gap-4 md:h-[76px]">
+        <div className="shell flex h-[60px] items-center justify-between gap-4 md:h-[68px]">
           <Brand />
 
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">

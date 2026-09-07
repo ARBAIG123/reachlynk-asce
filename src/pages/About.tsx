@@ -7,7 +7,7 @@ export default function About() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="pb-10 pt-36 md:pb-16 md:pt-44">
+      <section className="pb-8 pt-28 md:pb-12 md:pt-36">
         <div className="shell grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <div>
             <p className="eyebrow flex items-center gap-3 text-brand">
@@ -48,7 +48,7 @@ export default function About() {
       </section>
 
       {/* ================= STORY ================= */}
-      <section className="shell py-14 md:py-18">
+      <section className="shell py-10 md:py-14">
         <div className="mx-auto max-w-3xl">
           <Reveal>
             <p className="serif-accent text-[clamp(1.7rem,3.4vw,2.7rem)] leading-snug text-foreground">
@@ -78,7 +78,7 @@ export default function About() {
       </section>
 
       {/* ================= VALUES ================= */}
-      <section className="bg-secondary/70 py-16 md:py-22">
+      <section className="bg-secondary/70 py-12 md:py-16">
         <div className="shell">
           <p className="eyebrow flex items-center gap-3 text-brand">
             <span className="h-px w-8 bg-brand/60" />
@@ -107,7 +107,7 @@ export default function About() {
       </section>
 
       {/* ================= TIMELINE ================= */}
-      <section className="shell py-16 md:py-22">
+      <section className="shell py-12 md:py-16">
         <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
             <p className="eyebrow flex items-center gap-3 text-brand">

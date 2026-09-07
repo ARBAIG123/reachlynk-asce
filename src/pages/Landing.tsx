@@ -29,7 +29,7 @@ export default function Landing() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="relative overflow-hidden pb-12 pt-32 md:pb-20 md:pt-40">
+      <section className="relative overflow-hidden pb-8 pt-24 md:pb-14 md:pt-32">
         {/* Slow-moving Reachlynk background text */}
         <VelocityWord
           strength={0.4}
@@ -73,7 +73,7 @@ export default function Landing() {
               </Reveal>
 
               <Reveal delay={0.45} y={22}>
-                <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center">
+                <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
                   <Link
                     to="/contact?mode=project"
                     className={cn(
@@ -138,7 +138,7 @@ export default function Landing() {
       </section>
 
       {/* ================= STATS + PROOF ================= */}
-      <section className="shell py-16 md:py-22">
+      <section className="shell py-12 md:py-16">
         <div className="grid items-center gap-12 lg:grid-cols-[1fr_1.15fr]">
           <div>
             <SectionEyebrow>Proof, not promises</SectionEyebrow>
@@ -173,7 +173,7 @@ export default function Landing() {
       </section>
 
       {/* ================= PROCESS STRIP ================= */}
-      <section className="border-t border-border/70 bg-card/60 py-16 md:py-22">
+      <section className="border-t border-border/70 bg-card/60 py-12 md:py-16">
         <div className="shell">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <div>

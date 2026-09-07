@@ -36,7 +36,7 @@ export default function Services() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="pb-10 pt-36 md:pb-14 md:pt-44">
+      <section className="pb-6 pt-28 md:pb-10 md:pt-36">
         <div className="shell">
           <p className="eyebrow flex items-center gap-3 text-brand">
             <span className="h-px w-8 bg-brand/60" />
@@ -76,7 +76,7 @@ export default function Services() {
       </section>
 
       {/* ================= SERVICE CARDS ================= */}
-      <section className="shell pb-16 md:pb-22">
+      <section className="shell pb-12 md:pb-16">
         <div className="grid gap-5 md:grid-cols-2">
           {SERVICES.map((service, i) => (
             <Reveal
@@ -131,7 +131,7 @@ export default function Services() {
       </section>
 
       {/* ================= NOT OUR THING ================= */}
-      <section className="bg-secondary/70 py-16 md:py-22">
+      <section className="bg-secondary/70 py-12 md:py-16">
         <div className="shell grid gap-14 lg:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="eyebrow flex items-center gap-3 text-brand">
@@ -168,7 +168,7 @@ export default function Services() {
       </section>
 
       {/* ================= ENGAGEMENT MODELS ================= */}
-      <section className="shell py-16 md:py-22">
+      <section className="shell py-12 md:py-16">
         <p className="eyebrow flex items-center gap-3 text-brand">
           <span className="h-px w-8 bg-brand/60" />
           Ways to work with us
